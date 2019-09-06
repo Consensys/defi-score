@@ -1,18 +1,20 @@
 <img src="assets/images/banner.png" alt="DeFi Score">
 
 # DeFi Score
-> A methodology for assessing risk in permissionless lending platforms.
+> A framework for assessing risk in permissionless lending platforms.
 
 DeFi Score is a single, consistently comparable value for measuring protocol risk, based on factors including smart contract risk, collateralization, and liquidity.
 
-We encourage the Ethereum community to evolve the methodology, making it more effective and easier to use. Have your say in the future of DeFi risk.
+We encourage the Ethereum community to evolve the methodology, making it more effective and easier to use.
 
-Join the community on [Telegram](https://t.me/defiscore).
+Join the discussion on [Telegram](https://t.me/defiscore).
 
 ## Overview
 > show me some sweet visuals
 
-### The Formula (tbd)
+### The Formula
+>replace with graphic
+
 1. Smart Contract Risk (50%)
 * Audited code (25%)
 * All code’s byte source verified (15%)
@@ -32,7 +34,7 @@ Join the community on [Telegram](https://t.me/defiscore).
 > insert ToC
 
 ## Introduction
-This article introduces a model for assessing risk levels in various permissionless lending protocols. To account for the variety of risks present in these platforms, we use a multi-factor model that looks at smart contract, collateral, and liquidity risks. The model uses a mix of public off-chain and on-chain data to best estimate the relative levels of risk across multiple different permissionless, Ethereum-based lending products.
+Below we introduce a model for assessing risk levels in various permissionless lending protocols. To account for the variety of risks present in these platforms, we use a multi-factor model that looks at smart contract, collateral, and liquidity risks. The model uses a mix of public off-chain and on-chain data to best estimate the relative levels of risk across multiple different permissionless, Ethereum-based lending products.
 
 ### Motivation
 A major impetus for Satoshi Nakamoto in creating Bitcoin was the 2008 financial crisis. The genesis block of Bitcoin contained a reference to the bank bailouts of that time. Some felt that the crisis precipitating these bailouts was caused in part by the legacy financial world’s misunderstanding and mispricing of credit risk throughout the financial system.
