@@ -29,6 +29,10 @@ Join the discussion on [Telegram](https://t.me/defiscore).
 3. Other Considerations (15%)
 * Insurance/Regulatory Risk
 
+### Example
+> show a breakdown of Dai on Compound
+
+> consider showing a table of scores for Dai on Compound, dYdX, Nuo, and Fulcrum
 
 ## Table of Contents
 > insert ToC
