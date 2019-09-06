@@ -1,9 +1,7 @@
-
-
-<img src="assets/images/banner.png" alt="DeFi Score">
-
 # DeFi Score
 > DeFi Score is a methodology for assessing risk in permissionless lending platforms.
+
+<img src="assets/images/banner.png" alt="DeFi Score">
 
 ## What is it?
 A single, consistently comparable value for measuring protocol risk, based on factors including smart contract risk, collateralization, and liquidity.
