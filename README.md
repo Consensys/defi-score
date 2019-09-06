@@ -10,7 +10,52 @@ We encourage the Ethereum community to evolve the methodology, making it more ef
 Join the community on [Telegram](https://t.me/defiscore).
 
 ## Overview
+> show me some sweet visuals
+
+---
 
 ## Table of Contents
 
+---
+
+## Introduction
+
+### Motivation
+
+### DeFi Protocols
+
+## Components
+
+### Smart Contract Risk
+
+#### Code Security
+
+#### Code Openness
+
+### Financial Risk
+
+#### Collateral
+
+#### Liquidity
+
+### Other Considerations
+
+#### Insurance
+
+#### Regulatory Risk
+
+## Formula
+
+## Future Improvements
+
+## Limitations
+
+---
+
 ## Contributors
+
+## Community
+
+## Used By
+
+## License
