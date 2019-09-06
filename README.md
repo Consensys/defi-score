@@ -1,3 +1,3 @@
 # DeFi Score
 
-<img src="assets/images/banner.jpg" alt="DeFi Score">
+<img src="assets/images/banner.png" alt="DeFi Score">
