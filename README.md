@@ -15,15 +15,15 @@ Join the discussion on [Telegram](https://t.me/defiscore).
 ### The Components
 >What factors into a protocol’s DeFi Score?
 
-<img src="assets/images/components.png" alt="DeFi Score">
-
-| Smart Contract Risk  | Financial Risk                  | Other Considerations |
+| Smart Contract Risk  | Financial Risk | Other Considerations |
 |----------------------|---------------------------------|----------------------|
 | Audited Code         | Collateral Makeup CVaR          | Insurance Risk       |
 | Byte Source Verified | Collateralization Ratio 30d EMA | Regulatory Risk      |
 | Formal Verification  | Liquidity 30d EMA               |                      |
 | Bug Bounty Program   |                                 |                      |
 
+
+<img src="assets/images/components.png" alt="DeFi Score">
 
 ### Example
 > show a breakdown of Dai on Compound
