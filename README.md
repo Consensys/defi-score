@@ -12,22 +12,11 @@ Join the discussion on [Telegram](https://t.me/defiscore).
 ## Overview
 > show me some sweet visuals
 
-### The Formula
+### The Components
 >replace with graphic
 
-1. Smart Contract Risk (50%)
-* Audited code (25%)
-* All code’s byte source verified (15%)
-* Formal Verification (5%)
-* Bug Bounty Program (5%)
+<img src="assets/images/components.png" alt="DeFi Score">
 
-2. Financial Risk (35%)
-* Collateral Makeup CVaR (10%)
-* Collateralization Ratio 30d EMA (15%)
-* Liquidity 30d EMA (10%)
-
-3. Other Considerations (15%)
-* Insurance/Regulatory Risk
 
 ### Example
 > show a breakdown of Dai on Compound
@@ -118,7 +107,20 @@ Some platforms are contributing a portion of the interest accrued on their platf
 DeFi as an industry is extremely nascent. Algorithmic money markets are even more so. None of these platforms’ development teams are actually decentralized yet and none have been approved by the United States or other nations’ banking/finance regulatory bodies yet. This means that the user of these platforms also takes on some level of regulatory risk when interacting with them.
 
 ## Formula
-[insert detailed formula]
+
+1. Smart Contract Risk (50%)
+* Audited code (25%)
+* All code’s byte source verified (15%)
+* Formal Verification (5%)
+* Bug Bounty Program (5%)
+
+2. Financial Risk (35%)
+* Collateral Makeup CVaR (10%)
+* Collateralization Ratio 30d EMA (15%)
+* Liquidity 30d EMA (10%)
+
+3. Other Considerations (15%)
+* Insurance/Regulatory Risk
 
 ## Limitations
 This is not a validated statistical model. There is not enough data to properly validate this model on a product wide basis. This is an opinion based estimation framework to estimate the risks associated with different DeFI platforms.
