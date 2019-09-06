@@ -13,7 +13,7 @@ Join the discussion on [Telegram](https://t.me/defiscore).
 > show me some sweet visuals
 
 ### The Components
->replace with graphic
+>What factors into a protocol’s DeFi Score?
 
 <img src="assets/images/components.png" alt="DeFi Score">
 
