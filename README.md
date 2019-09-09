@@ -10,10 +10,10 @@ We encourage the Ethereum community to evolve the methodology, making it more ef
 Join the discussion on [Telegram](https://t.me/defiscore).
 
 ## Overview
-> show me some sweet visuals
+Four loko freegan seitan butcher tote bag. Fixie master cleanse microdosing fam typewriter. Pug photo booth yr jean shorts subway tile, whatever artisan lumbersexual intelligentsia flannel mlkshk flexitarian.
 
 ### The Components
->What factors into a protocol’s DeFi Score?
+What factors into a protocol’s DeFi Score?
 
 | Smart Contract Risk  | Financial Risk | Other Considerations |
 |----------------------|---------------------------------|----------------------|
@@ -23,12 +23,10 @@ Join the discussion on [Telegram](https://t.me/defiscore).
 | Bug Bounty Program   |                                 |                      |
 
 
-<img src="assets/images/components.png" alt="DeFi Score">
-
 ### Example
-> show a breakdown of Dai on Compound
+Four loko freegan seitan butcher tote bag. Fixie master cleanse microdosing fam typewriter. Pug photo booth yr jean shorts subway tile, whatever artisan lumbersexual intelligentsia flannel mlkshk flexitarian.
 
-> consider showing a table of scores for Dai on Compound, dYdX, Nuo, and Fulcrum
+> Insert example
 
 ## Table of Contents
 > insert ToC
