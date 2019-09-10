@@ -8,7 +8,7 @@ We encourage the Ethereum community to evolve the methodology, making it more ef
 * Join the discussion on [Telegram](https://t.me/defiscore).
 
 ### Scores
-Here are a few scores from early versions of the model. Note: scores are out of 10. We've also included reasons why they score the way they do. 
+Here are a few scores from early versions of the model. We've also included reasons why they score the way they do. Note: scores are out of 10.
 
 | Pool           | DeFi Score | Why?                                                        |
 |----------------|------------|-------------------------------------------------------------|
@@ -25,6 +25,8 @@ Here is a sample visualization of how a score could be displayed to end users. A
 
 ### The Components
 What goes into calculating the score?
+
+<img src="assets/images/components.png" alt="DeFi Score Banner Components">
 
 #### Smart Contract Risk
 <dl>
