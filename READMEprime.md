@@ -1,4 +1,4 @@
-<img src="assets/images/short_banner.png" alt="DeFi Score">
+<img src="assets/images/short_banner.png" alt="DeFi Score Banner">
 
 The DeFi Score is a framework for assessing risk in permissionless lending platforms. It's a single, consistently comparable value for measuring protocol risk, based on factors including smart contract risk, collateralization, and liquidity.
 
@@ -8,18 +8,25 @@ We encourage the Ethereum community to evolve the methodology, making it more ef
 * Join the discussion on [Telegram](https://t.me/defiscore).
 
 ### Scores
-We've released a first version of the DeFi score for lending Dai.
+Here are a few scores outputted by the model. We've included reasons why they score the way they do.
 
-| Asset | Protocol | DeFi Score |
-|-------|----------|------------|
-| Dai   | Compound | 6.5        |
-| Dai   | dYdX     | 5.5        |
-| Dai   | Fulcrum  | 4.5        |
-| Dai   | Nuo      | 3.5        |
+| Pool           | Score (out of 10) | Why?                                                        |
+|----------------|-------------------|-------------------------------------------------------------|
+| Compound - ETH | 8.5               | Audited, formally verified, highest liquidity in the market |
+| Compound - DAI | 5.5               | One of the least liquid compound markets historically       |
+| Compound - ZRX | 6.0               | Middling liquidity                                          |
+| dYdX - ETH     | 7.0               | Good liquidity, no formal verification                      |
+| dYdX - DAI     | 5.2               | Low liquidity                                               |
+
+### Example Implementation
+Here is a sample visualization of how a score could be displayed to end users. Although the underlying methodology is complex, it should be simple for a user to understand.
+
+<img src="assets/images/example.png" alt="DeFi Score Example">
 
 ### The Components
+What goes into calculating the score?
 
-<img src="assets/images/components_sm.png" alt="DeFi Score">
+<img src="assets/images/components_sm.png" alt="DeFi Score Components">
 
 <dl>
   <dt>Smart Contract Security (35%)</dt>
