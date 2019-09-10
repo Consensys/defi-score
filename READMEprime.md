@@ -19,7 +19,7 @@ We've released a first version of the DeFi score for lending Dai.
 
 ### The Components
 
-<img src="assets/images/components.png" alt="DeFi Score">
+<img src="assets/images/components_sm.png" alt="DeFi Score">
 
 <dl>
   <dt>Smart Contract Security (35%)</dt>
