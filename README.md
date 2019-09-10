@@ -64,14 +64,14 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
 
 
 ## Further Reading:
-[DeFi Score: Assessing Risk in Permissionless Lending Protocols](#)
+[DeFi Score: Assessing Risk in Permissionless Lending Protocols](whitepaper.md)
 
 ## Contributors
 ### Key Contributors:
 * Jack Clancy
 
 ### Additional Contributors:
-* Jordan Lyall
+* [Jordan Lyall](https://3box.io/0xcf88fa6ee6d111b04be9b06ef6fad6bd6691b88c/)
 * Todd Murtha
 * Thomas Lipari
 
