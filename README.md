@@ -8,7 +8,7 @@ We encourage the Ethereum community to evolve the methodology, making it more ef
 * Join the discussion on [Telegram](https://t.me/defiscore).
 
 ## Scores
-Here are a few scores from early versions of the model. We've also included reasons why they score the way they do. Note: scores are on a 10 point scale.
+We've provided a few scores from early versions of the model and have included reasons why they score the way they do. Note: scores are on a 10 point scale.
 
 | Pool           | DeFi Score | Why?                                                        |
 |----------------|------------|-------------------------------------------------------------|
@@ -24,7 +24,7 @@ Although the underlying methodology is complex, it should be simple for a user t
 <img src="assets/images/score_card.png" alt="DeFi Score Example">
 
 ## Components
-The DeFi Score methodology can be organized into Smart Contract Risk and Financial Risk.
+The DeFi Score methodology can be organized into Smart Contract Risk, Financial Risk, and Other Considerations.
 
 <img src="assets/images/components.png" alt="DeFi Score Banner Components">
 
@@ -50,7 +50,7 @@ Errors, bugs and unexpected outcomes in smart contracts can cause real financial
 #### Financial Risk: Liquidity (10%)
   The currently scoped platforms all attempt to incentive liquidity by using dynamic interest rate models which produce varying rates depending on the level of liquidity in each asset pool. However, incentivized liquidity does not mean guaranteed liquidity. The absolute level of liquidity is used instead of the percentage utilization (outstandingDebt/totalAssets) because it has a side effect of also scoring larger pools higher.
 
-### III. Additional Considerations
+### III. Other Considerations
 
 #### Insurance/Regulatory Risk (15%)
   While there are some promising innovations in the DeFi insurance space, none are widespread or mature enough yet. Also, none of these platforms’ development teams are actually decentralized yet and none have been approved by the United States or other nations’ banking/finance regulatory bodies yet.
