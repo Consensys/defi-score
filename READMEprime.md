@@ -18,7 +18,6 @@ We've released a first version of the DeFi score for lending Dai.
 | Dai   | Nuo      | 3.5        |
 
 ### The Components
-We detail a few of the core components of the score.
 
 <dl>
   <dt>Smart Contract Security (35%)</dt>
