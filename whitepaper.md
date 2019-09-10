@@ -1,29 +1,4 @@
-<img src="assets/images/short_banner.png" alt="DeFi Score">
-
-The DeFi Score is a framework for assessing risk in permissionless lending platforms. It's a single, consistently comparable value for measuring protocol risk, based on factors including smart contract risk, collateralization, and liquidity.
-
-We encourage the Ethereum community to evolve the methodology, making it more effective and easier to use.
-
-Join the discussion on [Telegram](https://t.me/defiscore).
-
-## Overview
-Four loko freegan seitan butcher tote bag. Fixie master cleanse microdosing fam typewriter. Pug photo booth yr jean shorts subway tile, whatever artisan lumbersexual intelligentsia flannel mlkshk flexitarian.
-
-### The Components
-What factors into a protocol’s DeFi Score?
-
-| Smart Contract Risk  | Financial Risk | Other Considerations |
-|----------------------|---------------------------------|----------------------|
-| Audited Code         | Collateral Makeup CVaR          | Insurance Risk       |
-| Byte Source Verified | Collateralization Ratio 30d EMA | Regulatory Risk      |
-| Formal Verification  | Liquidity 30d EMA               |                      |
-| Bug Bounty Program   |                                 |                      |
-
-
-### Example
-Four loko freegan seitan butcher tote bag. Fixie master cleanse microdosing fam typewriter. Pug photo booth yr jean shorts subway tile, whatever artisan lumbersexual intelligentsia flannel mlkshk flexitarian.
-
-> Insert example
+# DeFi Score: Assessing Risk in Permissionless Lending Protocols
 
 ## Table of Contents
 > insert ToC
@@ -145,10 +120,6 @@ This methodology will be initially open sourced on Github, but the eventual goal
 
 The eventual goal of this research is to converge all of the work done into a sort of risk DAO, that could act like an open source credit rating agency that would determine methodologies and provide grant funding to engineers, risk management experts and others that contribute to this living body of work. While the amount of risk management work that needs to be done in the space is daunting, we are excited about the future.
 
-
-## Contributors
-> Insert 3box profiles of Contributors
-
 ## Key Contributors:
 * Jack Clancy
 
@@ -160,9 +131,6 @@ The eventual goal of this research is to converge all of the work done into a so
 
 ## Community
 Join the DeFi Score community on [Telegram](https://t.me/defiscore).
-
-## Used By
-> Stay tuned
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/2.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons Attribution-ShareAlike 2.0 Generic License</a>.
