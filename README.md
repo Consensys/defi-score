@@ -19,12 +19,12 @@ Here are a few scores from early versions of the model. We've also included reas
 | dYdX - DAI     | 5.2        | Low liquidity                                               |
 
 ### Example Implementation
-Here is a sample visualization of how a score could be displayed to end users. Although the underlying methodology is complex, it should be simple for a user to understand.
+Here's how a score could be displayed to end users. Although the underlying methodology is complex, it should be simple for a user to understand.
 
 <img src="assets/images/example.png" alt="DeFi Score Example">
 
 ### The Components
-What goes into calculating the score?
+The DeFi Score methodology can be organized into Smart Contract Risk and Financial Risk.
 
 <img src="assets/images/components_color.png" alt="DeFi Score Banner Components">
 
