@@ -8,7 +8,7 @@ We encourage the Ethereum community to evolve the methodology, making it more ef
 * Join the discussion on [Telegram](https://t.me/defiscore).
 
 ## Scores
-Here are a few scores from early versions of the model. We've also included reasons why they score the way they do. Note: scores are out of 10.
+Here are a few scores from early versions of the model. We've also included reasons why they score the way they do. Note: scores are on a 10 point scale.
 
 | Pool           | DeFi Score | Why?                                                        |
 |----------------|------------|-------------------------------------------------------------|
@@ -52,7 +52,7 @@ Errors, bugs and unexpected outcomes in smart contracts can cause real financial
 
 ### III. Additional Considerations
 
-#### Insurance/Regulatory Risk (15%
+#### Insurance/Regulatory Risk (15%)
   While there are some promising innovations in the DeFi insurance space, none are widespread or mature enough yet. Also, none of these platforms’ development teams are actually decentralized yet and none have been approved by the United States or other nations’ banking/finance regulatory bodies yet.
 
 
@@ -66,7 +66,6 @@ Errors, bugs and unexpected outcomes in smart contracts can cause real financial
 * Jordan Lyall
 * Todd Murtha
 * Thomas Lipari
-* [and the rest]
 
 ## Community
 Join the DeFi Score community on [Telegram](https://t.me/defiscore).
