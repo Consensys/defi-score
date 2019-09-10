@@ -26,9 +26,9 @@ Here is a sample visualization of how a score could be displayed to end users. A
 ### The Components
 What goes into calculating the score?
 
-<img src="assets/images/components.png" alt="DeFi Score Banner Components">
+<img src="assets/images/components_color.png" alt="DeFi Score Banner Components">
 
-#### Smart Contract Risk
+#### I. Smart Contract Risk
 <dl>
   <dt>Smart Contract Security (35%)</dt>
   <dd>Errors, bugs and unexpected outcomes in smart contracts can cause real financial harm. These risks can be minimized by proactive code audits and formal verification from reputable security firms.
@@ -46,7 +46,7 @@ What goes into calculating the score?
   <dd>Part of the promise of DeFi is that the functionality of smart contracts is completely on-chain, which means they are verifiable and transparent. Developers of DeFi platforms still have the ability to obscure their code in various ways, such as not verifying the bytecode and using off chain oracles processes. Security through obscurity offers weak security guarantees at best, and at worst results in delays in finding critical bugs.</dd>
 </dl>
 
-#### Financial Risk
+#### II. Financial Risk
 
 <dl>
   <dt>Financial Risk: Collateral (25%)</dt>
@@ -58,7 +58,7 @@ What goes into calculating the score?
   <dd>The currently scoped platforms all attempt to incentive liquidity by using dynamic interest rate models which produce varying rates depending on the level of liquidity in each asset pool. However, incentivized liquidity does not mean guaranteed liquidity. The absolute level of liquidity is used instead of the percentage utilization (outstandingDebt/totalAssets) because it has a side effect of also scoring larger pools higher.</dd>
 </dl>
 
-#### Additional Considerations
+#### III. Additional Considerations
 
 <dl>
   <dt>Insurance/Regulatory Risk (15%)</dt>
