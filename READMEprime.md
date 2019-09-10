@@ -19,6 +19,8 @@ We've released a first version of the DeFi score for lending Dai.
 
 ### The Components
 
+<img src="assets/images/components.png" alt="DeFi Score">
+
 <dl>
   <dt>Smart Contract Security (35%)</dt>
   <dd>Errors, bugs and unexpected outcomes in smart contracts can cause real financial harm. These risks can be minimized by proactive code audits and formal verification from reputable security firms.
