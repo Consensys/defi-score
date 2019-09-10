@@ -26,7 +26,7 @@ Although the underlying methodology is complex, it should be simple for a user t
 ## Components
 The DeFi Score methodology can be organized into Smart Contract Risk and Financial Risk.
 
-<img src="assets/images/components_color.png" alt="DeFi Score Banner Components">
+<img src="assets/images/components.png" alt="DeFi Score Banner Components">
 
 ### I. Smart Contract Risk
 
