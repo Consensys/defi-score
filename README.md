@@ -1,4 +1,4 @@
-<img src="assets/images/banner.png" alt="DeFi Score">
+<img src="assets/images/short_banner.png" alt="DeFi Score">
 
 # DeFi Score
 > A framework for assessing risk in permissionless lending platforms.
