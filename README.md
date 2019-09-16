@@ -72,7 +72,7 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
 
 ### Additional Contributors:
 * [Jordan Lyall](https://3box.io/0xcf88fa6ee6d111b04be9b06ef6fad6bd6691b88c/)
-* Todd Murtha
+* [Todd Murtha](https://www.3box.io/0x3e5a3f30695949ce0541c8f1843acbdf1557a382)
 * Thomas Lipari
 
 ## Community
