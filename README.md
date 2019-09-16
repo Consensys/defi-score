@@ -28,7 +28,7 @@ We've provided a few scores from early versions of the model and have included r
 ## Example Implementation
 Although the underlying methodology is complex, it should be simple for a user to understand.
 
-<img src="assets/images/score_card.png" alt="DeFi Score Example">
+<img src="assets/images/defiscore-implementation.png" alt="DeFi Score Example">
 
 ## Components
 The DeFi Score methodology can be organized into Smart Contract Risk, Financial Risk, and Other Considerations.
