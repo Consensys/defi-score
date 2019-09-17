@@ -1,24 +1,24 @@
 # DeFi Score: Assessing Risk in Permissionless Lending Protocols
 
 ## Table of Contents
+This article introduces a model for assessing risk levels in various permissionless lending protocols. To account for the variety of risks present in these platforms, we use a multi-factor model that looks at smart contract, collateral, and liquidity risks. The model uses a mix of public off-chain and on-chain data to best estimate the relative levels of risk across multiple different permissionless, Ethereum-based lending products.
+
+## tl;dr
+
 - [Introduction](#introduction)
-  - [Motivation](#motivation)
-  - [DeFi Protocols](#defi-protocols)
-- [Components](#components)
+- [Overview of Permissionless Lending Protocols](#overview-of-permissionless-lending-protocols)
   - [Smart Contract Risk](#smart-contract-risk)
   - [Financial Risk](#financial-risk)
   - [Other Considerations](#other-considerations)
-- [Formula](#formula)
+- [Formula Breakdown](#formula-breakdown)
 - [Limitations](#limitations)
 - [Future Improvements](#future-improvements)
-- [Key Contributors:](#key-contributors)
-- [Additional Contributors:](#additional-contributors)
+- [References](#references)
+- [Contributors](#contributors)
+  - [Key Contributors:](#key-contributors)
+  - [Additional Contributors:](#additional-contributors)
 - [Community](#community)
 - [License](#license)
-
-
-## tl;dr
-This article introduces a model for assessing risk levels in various permissionless lending protocols. To account for the variety of risks present in these platforms, we use a multi-factor model that looks at smart contract, collateral, and liquidity risks. The model uses a mix of public off-chain and on-chain data to best estimate the relative levels of risk across multiple different permissionless, Ethereum-based lending products.
 
 ## Introduction
 A major impetus for Satoshi Nakamoto in creating Bitcoin was the 2008 financial crisis. The genesis block of Bitcoin contained a reference to the bank bailouts of that time. Some felt that the crisis precipitating these bailouts was caused in part by the legacy financial world’s misunderstanding and mispricing of credit risk throughout the financial system. Risk management is one of the most critical pieces of modern financial infrastructure and results in a more robust and safe financial system for all.
