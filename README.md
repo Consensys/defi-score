@@ -4,7 +4,7 @@ The DeFi Score is a framework for assessing risk in permissionless lending platf
 
 We encourage the Ethereum community to evolve the methodology, making it more effective and easier to use.
 
-* Read the detailed [whitepaper](#).
+* Read the detailed [whitepaper](whitepaper.md).
 * Join the discussion on [Telegram](https://t.me/defiscore).
 
 ## Table of Contents
