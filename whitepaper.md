@@ -1,9 +1,9 @@
 # DeFi Score: Assessing Risk in Permissionless Lending Protocols
 
-## Table of Contents
+## tl;dr
 This article introduces a model for assessing risk levels in various permissionless lending protocols. To account for the variety of risks present in these platforms, we use a multi-factor model that looks at smart contract, collateral, and liquidity risks. The model uses a mix of public off-chain and on-chain data to best estimate the relative levels of risk across multiple different permissionless, Ethereum-based lending products.
 
-## tl;dr
+## Table of Contents
 
 - [Introduction](#introduction)
 - [Overview of Permissionless Lending Protocols](#overview-of-permissionless-lending-protocols)
