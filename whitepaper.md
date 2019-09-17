@@ -17,20 +17,20 @@
 - [License](#license)
 
 
+## tl;dr
+This article introduces a model for assessing risk levels in various permissionless lending protocols. To account for the variety of risks present in these platforms, we use a multi-factor model that looks at smart contract, collateral, and liquidity risks. The model uses a mix of public off-chain and on-chain data to best estimate the relative levels of risk across multiple different permissionless, Ethereum-based lending products.
+
 ## Introduction
-Below we introduce a model for assessing risk levels in various permissionless lending protocols. To account for the variety of risks present in these platforms, we use a multi-factor model that looks at smart contract, collateral, and liquidity risks. The model uses a mix of public off-chain and on-chain data to best estimate the relative levels of risk across multiple different permissionless, Ethereum-based lending products.
+A major impetus for Satoshi Nakamoto in creating Bitcoin was the 2008 financial crisis. The genesis block of Bitcoin contained a reference to the bank bailouts of that time. Some felt that the crisis precipitating these bailouts was caused in part by the legacy financial world’s misunderstanding and mispricing of credit risk throughout the financial system. Risk management is one of the most critical pieces of modern financial infrastructure and results in a more robust and safe financial system for all.
 
-### Motivation
-A major impetus for Satoshi Nakamoto in creating Bitcoin was the 2008 financial crisis. The genesis block of Bitcoin contained a reference to the bank bailouts of that time. Some felt that the crisis precipitating these bailouts was caused in part by the legacy financial world’s misunderstanding and mispricing of credit risk throughout the financial system.
-
-In the last year, we have seen an explosion of smart contract based financial protocols, many catering to the lending and borrowing markets. These markets have grown into the largest sub-category of so-called “decentralized finance” or “DeFi” and experienced 355% YoY growth. However, not all lending platforms are created equal. Different lending products have very different risk/reward profiles, which makes comparing their rates alone akin to comparing apples to oranges.
+In the last year, we have seen an explosion of permissionless financial protocols on the Ethereum blockchain, many catering to the lending and borrowing markets. These markets have grown into the largest sub-category of so-called “decentralized finance” or “DeFi” and experienced 355% YoY growth. However, not all lending platforms are created equal. Different lending products have very different risk/reward profiles, which makes comparing their rates alone akin to comparing apples to oranges.
 
 Better understanding and modelling of risk in the DeFi space would be an important step towards maturity. There is much work to be done, but now is the time to start. Hopefully this model and others like it can begin to lay the groundwork for robust risk evaluation in DeFi.
 
-### DeFi Protocols
-[ Can we just provide a short paragraph explaining these DeFi protocols -- i.e., they are based on smart contracts, which are just code that is run on the ethereum blockchain (maybe mention consensus), and typically include a user “locking” collateral in the protocol in exchange for some return. ]
+Here, we introduce a quantitative model for assessing risk levels in various permissionless lending protocols.
 
-## Components
+
+## Overview of Permissionless Lending Protocols
 
 ### Smart Contract Risk
 Smart Contract Risk is the main contributor to counterparty risk in DeFi. While DeFi is often referred to as trustless, a user of a DeFi platform must trust the smart contract they are interacting with. A smart contract could be opaque to a user, which means a user is trusting the contract code in the same way a user trusts any web 2.0 infrastructure. There is also the risk that a smart contract is hacked because it is insecure, which has grave financial implications for any and all users of the hacked protocol, including, for example, loss of all collateral locked in the protocol. Our proposed model looks at two elements of smart contract risk.
@@ -88,7 +88,7 @@ Liquidity risk is assessed by a single data point that is derivable from on-chai
 
 ### Other Considerations
 
-#### Insurance
+#### The Need for Insurance
 In most developed banking systems, money market accounts have some form of deposit insurance. In the US, this deposit insurance is FDIC insurance, which insures a single bank deposit account up to $250,000. There is no equivalent deposit insurance in the DeFi ecosystem yet. While there are some promising innovations in the DeFi insurance space (Nexus Mutual), none are widespread or mature enough yet.
 
 Some platforms are contributing a portion of the interest accrued on their platform to an insurance reserve, in case of a liquidity squeeze or black swan event. However, these insurance pools are nowhere near large enough to cover a large insolvency event on one of these platforms.
@@ -97,7 +97,7 @@ Some platforms are contributing a portion of the interest accrued on their platf
 #### Regulatory Risk
 DeFi as an industry is extremely nascent. Algorithmic money markets are even more so. None of these platforms’ development teams are actually decentralized yet and none have been approved by the United States or other nations’ banking/finance regulatory bodies yet. This means that the user of these platforms also takes on some level of regulatory risk when interacting with them.
 
-## Formula
+## Formula Breakdown
 
 1. Smart Contract Risk (50%)
 * Audited code (25%)
@@ -134,14 +134,24 @@ This methodology will be initially open sourced on Github, but the eventual goal
 
 The eventual goal of this research is to converge all of the work done into a sort of risk DAO, that could act like an open source credit rating agency that would determine methodologies and provide grant funding to engineers, risk management experts and others that contribute to this living body of work. While the amount of risk management work that needs to be done in the space is daunting, we are excited about the future.
 
-## Key Contributors:
+## References
+1. Evans, Alex. “A Ratings-Based Model for Credit Events in MakerDAO.” A Ratings-Based Model for Credit Events in MakerDAO. Placeholder VC, July 2019. https://static1.squarespace.com/static/5a479ee3b7411c6102f75729/t/5d37587d026881000198ef51/1563908221879/Maker-Ratings.pdf.
+2. Nakamoto, Satoshi. “Bitcoin Genesis Block.” Blockchain, January 3, 2009. https://www.blockchain.com/btc/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b?show_adv=true.
+3. Callagy, Robert, Vanessa Robert, Marc Pinto, and Daniel Marty. “Money Market Funds.” Money Market Funds. New York, NY: Moody's Investor Service, 2019.
+
+
+
+
+
+
+## Contributors
+### Key Contributors:
 * Jack Clancy
 
-## Additional Contributors:
-* Jordan Lyall
-* Todd Murtha
+### Additional Contributors:
+* [Jordan Lyall](https://3box.io/0xcf88fa6ee6d111b04be9b06ef6fad6bd6691b88c/)
+* [Todd Murtha](https://www.3box.io/0x3e5a3f30695949ce0541c8f1843acbdf1557a382)
 * Thomas Lipari
-* [and the rest]
 
 ## Community
 Join the DeFi Score community on [Telegram](https://t.me/defiscore).
