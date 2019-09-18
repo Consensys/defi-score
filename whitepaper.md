@@ -15,8 +15,8 @@ This article introduces a model for assessing risk levels in various permissionl
 - [Future Improvements](#future-improvements)
 - [References](#references)
 - [Contributors](#contributors)
-  - [Key Contributors:](#key-contributors)
-  - [Additional Contributors:](#additional-contributors)
+  - [Key Contributors](#key-contributors)
+  - [Additional Contributors](#additional-contributors)
 - [Community](#community)
 - [License](#license)
 
@@ -161,7 +161,7 @@ The eventual goal of this research is to converge all of the work done into a so
 ### Additional Contributors:
 * [Jordan Lyall](https://3box.io/0xcf88fa6ee6d111b04be9b06ef6fad6bd6691b88c/)
 * [Todd Murtha](https://www.3box.io/0x3e5a3f30695949ce0541c8f1843acbdf1557a382)
-* Thomas Lipari
+* [Thomas Lipari](https://3box.io/0xcb28e9eaf9fed40c3147fa832a4afdef28a8684b)
 
 ## Community
 Join the DeFi Score community on [Telegram](https://t.me/defiscore).
