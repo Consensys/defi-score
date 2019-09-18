@@ -29,6 +29,9 @@ Better understanding and modelling of risk in the DeFi space would be an importa
 
 Here, we introduce a quantitative model for assessing risk levels in various permissionless lending protocols.
 
+<sup>1</sup>https://www.blockchain.com/btc/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b
+<sup>2</sup>According to DeFi Pulse Total Value Locked (TVL)  lending category data
+
 
 ## Overview of Permissionless Lending Protocols
 Permissionless lending protocols are systems that allow users to lend and borrow various different digital assets typically through so-called “smart contracts” on the Ethereum blockchain. These “smart contracts” are not contracts in the legal sense; rather, they are computer code that effectively lives and executes on the Ethereum blockchain. Users that lend assets are distributed the interest earned from their loans. Borrowers post collateral, typically greater than the value of the loan, and pay a variable interest rate. Some examples of permissionless lending protocols include Compound, dYdX and Nuo.
@@ -46,6 +49,11 @@ Our model assesses code security by looking at three pieces of off-chain but pub
 1. Audited Code: The first is whether the code been audited by a reputable security team (Consensys Diligence, Trail of Bits, others??).
 2. Formal Verification:The second data point is whether the code has been formally verified by a reputable security team.
 3. Bounty Program:The third data point is whether the development team offers a public bug bounty program.
+
+
+<sup>3</sup>Securities and Exchange Commission, Release No. 81207, https://www.sec.gov/litigation/investreport/34‐81207.pdf (“SEC DAO Report”) at 1.
+
+<sup>4</sup>Id. at 9. The DAO hack funds were ultimately recovered through an extraordinary “fork” of the Ethereum blockchain, id., but such forks cannot be expected to recover from future hacks.
 
 #### Code Openness
 Part of the promise of DeFi is that the functionality of smart contracts is completely on-chain, which means the code is verifiable and transparent. Developers of DeFi platforms still have the ability to obscure their code in various ways, such as not verifying the bytecode and using off chain oracles processes. Security through obscurity offers weak security guarantees at best, and at worst results in delays in finding critical bugs. While bytecode decompilation is possible, it is a difficult and time-consuming process and makes it hard to follow the mantra of “don’t trust, verify”.
@@ -81,6 +89,10 @@ There are many different models to assess the risk of a portfolio of assets. One
 <img alt="ETH Histogram" style="border-width:0" src="assets/images/histogram.png" />
 
 The complement of the percentage is taken as a higher CVAR is worse because it means that a higher percentage of the total Collateral is at risk.
+
+<sup>5</sup>Based on CoinMarketCap data ETH over the last 30d has done ~$190.7B in volume while LINK has done ~$2.2B
+
+<sup>6</sup>Based on Yahoo Finance data, 30 day annualized volatility has been as high as ~330 for LINK-USD and as high as 165 for ETH-USD in the past year
 
 
 #### Liquidity
@@ -137,12 +149,6 @@ This methodology will be initially open sourced on Github, but the eventual goal
 
 The eventual goal of this research is to converge all of the work done into a sort of risk DAO, that could act like an open source credit rating agency that would determine methodologies and provide grant funding to engineers, risk management experts and others that contribute to this living body of work. While the amount of risk management work that needs to be done in the space is daunting, we are excited about the future.
 
-* <sup>1</sup>https://www.blockchain.com/btc/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b
-* <sup>2</sup>According to DeFi Pulse Total Value Locked (TVL)  lending category data
-* <sup>3</sup>Securities and Exchange Commission, Release No. 81207, https://www.sec.gov/litigation/investreport/34‐81207.pdf (“SEC DAO Report”) at 1.
-* <sup>4</sup>Id. at 9. The DAO hack funds were ultimately recovered through an extraordinary “fork” of the Ethereum blockchain, id., but such forks cannot be expected to recover from future hacks.
-* <sup>5</sup>Based on CoinMarketCap data ETH over the last 30d has done ~$190.7B in volume while LINK has done ~$2.2B
-* <sup>6</sup>Based on Yahoo Finance data, 30 day annualized volatility has been as high as ~330 for LINK-USD and as high as 165 for ETH-USD in the past year
 
 ## References
 1. Evans, Alex. “A Ratings-Based Model for Credit Events in MakerDAO.” A Ratings-Based Model for Credit Events in MakerDAO. Placeholder VC, July 2019. https://static1.squarespace.com/static/5a479ee3b7411c6102f75729/t/5d37587d026881000198ef51/1563908221879/Maker-Ratings.pdf.
