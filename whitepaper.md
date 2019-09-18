@@ -21,9 +21,9 @@ This article introduces a model for assessing risk levels in various permissionl
 - [License](#license)
 
 ## Introduction
-A major impetus for Satoshi Nakamoto in creating Bitcoin was the 2008 financial crisis. The genesis block of Bitcoin contained a reference to the bank bailouts of that time. Some felt that the crisis precipitating these bailouts was caused in part by the legacy financial world’s misunderstanding and mispricing of credit risk throughout the financial system. Risk management is one of the most critical pieces of modern financial infrastructure and results in a more robust and safe financial system for all.
+A major impetus for Satoshi Nakamoto in creating Bitcoin was the 2008 financial crisis. The genesis block of Bitcoin contained a reference to the bank bailouts of that time<sup>1</sup>. Some felt that the crisis precipitating these bailouts was caused in part by the legacy financial world’s misunderstanding and mispricing of credit risk throughout the financial system. Risk management is one of the most critical pieces of modern financial infrastructure and results in a more robust and safe financial system for all.
 
-In the last year, we have seen an explosion of permissionless financial protocols on the Ethereum blockchain, many catering to the lending and borrowing markets. These markets have grown into the largest sub-category of so-called “decentralized finance” or “DeFi” and experienced 355% YoY growth. However, not all lending platforms are created equal. Different lending products have very different risk/reward profiles, which makes comparing their rates alone akin to comparing apples to oranges.
+In the last year, we have seen an explosion of permissionless financial protocols on the Ethereum blockchain, many catering to the lending and borrowing markets. These markets have grown into the largest sub-category of so-called “decentralized finance” or “DeFi” and experienced 355% YoY growth<sup>2</sup>. However, not all lending platforms are created equal. Different lending products have very different risk/reward profiles, which makes comparing their rates alone akin to comparing apples to oranges.
 
 Better understanding and modelling of risk in the DeFi space would be an important step towards maturity. There is much work to be done, but now is the time to start. Hopefully this model and others like it can begin to lay the groundwork for robust risk evaluation in DeFi.
 
@@ -31,12 +31,13 @@ Here, we introduce a quantitative model for assessing risk levels in various per
 
 
 ## Overview of Permissionless Lending Protocols
+Permissionless lending protocols are systems that allow users to lend and borrow various different digital assets typically through so-called “smart contracts” on the Ethereum blockchain. These “smart contracts” are not contracts in the legal sense; rather, they are computer code that effectively lives and executes on the Ethereum blockchain. Users that lend assets are distributed the interest earned from their loans. Borrowers post collateral, typically greater than the value of the loan, and pay a variable interest rate. Some examples of permissionless lending protocols include Compound, dYdX and Nuo.
 
 ### Smart Contract Risk
-Smart Contract Risk is the main contributor to counterparty risk in DeFi. While DeFi is often referred to as trustless, a user of a DeFi platform must trust the smart contract they are interacting with. A smart contract could be opaque to a user, which means a user is trusting the contract code in the same way a user trusts any web 2.0 infrastructure. There is also the risk that a smart contract is hacked because it is insecure, which has grave financial implications for any and all users of the hacked protocol, including, for example, loss of all collateral locked in the protocol. Our proposed model looks at two elements of smart contract risk.
+Smart Contract Risk is the main contributor to counterparty risk in DeFi. While DeFi is often referred to as trustless, a user of a DeFi platform must trust the smart contract they are interacting with. A smart contract could be opaque to a user, which means a user is trusting the contract code in the same way a user trusts any web 2.0 infrastructure. There is also the risk that a smart contract is hacked because it is insecure, which has grave financial implications for any and all users of the hacked contract, including, for example, loss of all collateral locked in the contract. Our proposed model looks at two elements of smart contract risk.
 
 #### Code Security
-The security of smart contracts are extremely important when evaluating the risk of users losing funds that are stored in a smart contract when interacting with many DeFi platforms. As the ecosystem has learned, errors in smart contracts can result in significant financial damage. For example, the so-called “DAO hack” was an attack launched against a project commonly referred to as “The DAO,” which was an early example of a Decentralized Autonomous Organization ‐‐ i.e., a “virtual” organization embodied in smart contracts on the Ethereum blockchain. On June 17, 2016, an unknown individual or group began rapidly diverting ETH from The DAO, causing approximately 3.6 million ETH—1/3 of The DAO’s total ETH—to move from The DAO’s Ethereum Blockchain address to an Ethereum Blockchain address controlled by the attacker.
+The security of smart contracts are extremely important when evaluating the risk of users losing funds that are stored in a smart contract when interacting with many DeFi platforms. As the ecosystem has learned, errors in smart contracts can result in significant financial damage. For example, the so-called “DAO hack” was an attack launched against a project commonly referred to as “The DAO,” which was an early example of a Decentralized Autonomous Organization ‐‐ i.e., a “virtual” organization embodied in smart contracts on the Ethereum blockchain.<sup>3</sup> On June 17, 2016, an unknown individual or group began rapidly diverting ETH from The DAO, causing approximately 3.6 million ETH—1/3 of The DAO’s total ETH—to move from The DAO’s Ethereum Blockchain address to an Ethereum Blockchain address controlled by the attacker.<sup>4</sup>
 
 While no smart contract can be guaranteed as safe and free of bugs, a thorough code audit and formal verification process from a reputable security firm helps uncover critical, high severity bugs that otherwise could result in financial harm to users. Bug bounty programs are another positive indicator that the development team takes security seriously by incentivizing independent security researchers to discover protocol bugs, ultimately allowing for a more widespread security review.
 
@@ -47,7 +48,7 @@ Our model assesses code security by looking at three pieces of off-chain but pub
 3. Bounty Program:The third data point is whether the development team offers a public bug bounty program.
 
 #### Code Openness
-Part of the promise of DeFi is that the functionality of smart contracts is completely on-chain, which means they are verifiable and transparent. Developers of DeFi platforms still have the ability to obscure their code in various ways, such as not verifying the bytecode and using off chain oracles processes. Security through obscurity offers weak security guarantees at best, and at worst results in delays in finding critical bugs. While bytecode decompilation is possible, it is a difficult and time-consuming process and makes it hard to follow the mantra of “don’t trust, verify”.
+Part of the promise of DeFi is that the functionality of smart contracts is completely on-chain, which means the code is verifiable and transparent. Developers of DeFi platforms still have the ability to obscure their code in various ways, such as not verifying the bytecode and using off chain oracles processes. Security through obscurity offers weak security guarantees at best, and at worst results in delays in finding critical bugs. While bytecode decompilation is possible, it is a difficult and time-consuming process and makes it hard to follow the mantra of “don’t trust, verify”.
 
 Code openness is assessed by looking at a single data point of off-chain but public data, whether the byte code has been verified.
 
@@ -59,23 +60,25 @@ The current model looks at two elements of financial risk:
 #### Collateral
 Without a widely accepted approach to on-chain reputation or identity, the only method to avoid unwanted amounts of credit risk in DeFi money market platforms is to use over-collateralization. While all of the current platforms use very conservative collateral factors, the highly volatile nature of crypto assets means that these high collateral factors may still be insufficient.
 
-The makeup of collateral assets that back these DeFi platforms also have a high level of variation, with some being made up of much more liquid, stable assets than others. For example, a platform may be primarily backed by ETH. While ETH is still a very volatile asset, it is relatively stable and liquid compared to an asset like LINK. These collateral makeup differences are an important factor when thinking about platform risk.
+The makeup of collateral assets that back these DeFi platforms also have a high level of variation, with some being made up of much more liquid<sup>5</sup>, stable assets than others. For example, a platform may be primarily backed by ETH. While ETH is still a very volatile asset, it is relatively stable and liquid compared to an asset like LINK<sup>6</sup>. These collateral makeup differences are an important factor when thinking about platform risk.
 
 Collateral Risk is assessed by looking at two pieces of data, both derivable from on-chain data. The first data point is the 30 day Exponential Moving Average (EMA) of the collateralization ratio, which is normalized using logarithmic min-max normalization across all of the available lending pools.  The second data point is an analysis of the collateral portfolio. Generally, EMA is calculated as follows:
 
-[insert EMA formula graphic]
+<img alt="EMA formula" style="border-width:0" src="assets/images/EMA.png" />
+
 
 Where:
+* The coefficient _α_ represents the degree of weighting decrease, a constant smoothing factor between 0 and 1. A smoothing factor of 2/31 has been chosen.
+* Y<sub>t</sub> is the value at a time period _t_. This is 30 for finding a 30d EMA
+* S<sub>t</sub> is the value of the EMA at any time period _t_.
 
-* The coefficient α represents the degree of weighting decrease, a constant smoothing factor between 0 and 1. A smoothing factor of 2/31 has been chosen.
-* Yt is the value at a time period t. This is 30 for finding a 30d EMA
-* St is the value of the EMA at any time period t.
+There are many different models to assess the risk of a portfolio of assets. One of the most common models is the VaR (Value at Risk) model. There are multiple different variations of the VaR model. This model currently uses the CVaR (Conditional Value at Risk) model, also known as the Expected Shortfall model. The methodology uses CVaR over VaR because CVaR better captures the probability and drawdown of more extreme scenarios known as black swans. The above figure helps demonstrate this difference-- the CVAR (ES) model results in a larger potential drawdown. Due to the nascency and extreme volatility present in crypto assets, the methodology is more conservative. The model uses the 99% CVaR model with the following formula:
 
-[insert histogram]
+<img alt="ETH Histogram" style="border-width:0" src="assets/images/cvar.png" />
 
-There are many different models to assess the risk of a portfolio of assets. One of the most common models is the VaR (Value at Risk) model. There are multiple different variations of the VaR model. This model currently uses the CVaR (Conditional Value at Risk) model, also known as the Expected Shortfall model. The methodology uses CVaR over VaR because CVaR better captures the probability and drawdown of more extreme scenarios. The above figure helps demonstrate this difference-- the CVAR (ES) model results in a larger potential drawdown. Due to the nascency and extreme volatility present in crypto assets, the methodology is more conservative. The model uses the 99% CVaR model with the following formula:
+<br />
 
-[insert formula]
+<img alt="ETH Histogram" style="border-width:0" src="assets/images/histogram.png" />
 
 The complement of the percentage is taken as a higher CVAR is worse because it means that a higher percentage of the total Collateral is at risk.
 
@@ -133,6 +136,13 @@ Another eventual goal is to provide an API for this and other scoring algorithms
 This methodology will be initially open sourced on Github, but the eventual goal is to make the model more community managed by allowing for decentralized governance to determine factor weighting and factor inclusion.
 
 The eventual goal of this research is to converge all of the work done into a sort of risk DAO, that could act like an open source credit rating agency that would determine methodologies and provide grant funding to engineers, risk management experts and others that contribute to this living body of work. While the amount of risk management work that needs to be done in the space is daunting, we are excited about the future.
+
+* <sup>1</sup>https://www.blockchain.com/btc/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b
+* <sup>2</sup>According to DeFi Pulse Total Value Locked (TVL)  lending category data
+* <sup>3</sup>Securities and Exchange Commission, Release No. 81207, https://www.sec.gov/litigation/investreport/34‐81207.pdf (“SEC DAO Report”) at 1.
+* <sup>4</sup>Id. at 9. The DAO hack funds were ultimately recovered through an extraordinary “fork” of the Ethereum blockchain, id., but such forks cannot be expected to recover from future hacks.
+* <sup>5</sup>Based on CoinMarketCap data ETH over the last 30d has done ~$190.7B in volume while LINK has done ~$2.2B
+* <sup>6</sup>Based on Yahoo Finance data, 30 day annualized volatility has been as high as ~330 for LINK-USD and as high as 165 for ETH-USD in the past year
 
 ## References
 1. Evans, Alex. “A Ratings-Based Model for Credit Events in MakerDAO.” A Ratings-Based Model for Credit Events in MakerDAO. Placeholder VC, July 2019. https://static1.squarespace.com/static/5a479ee3b7411c6102f75729/t/5d37587d026881000198ef51/1563908221879/Maker-Ratings.pdf.
