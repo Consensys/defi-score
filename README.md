@@ -1,4 +1,4 @@
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <img src="assets/images/banner.png" alt="DeFi Score Banner">
 
 The DeFi Score is a framework for assessing risk in permissionless lending platforms. It's a single, consistently comparable value for measuring protocol risk, based on factors including smart contract risk, collateralization, and liquidity.
@@ -77,6 +77,7 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
   <tr>
     <td align="center"><a href="https://github.com/jclancy93"><img src="https://avatars2.githubusercontent.com/u/7850202?v=4" width="100px;" alt="Jack Clancy"/><br /><sub><b>Jack Clancy</b></sub></a><br /><a href="https://github.com/ConsenSys/defi-score/commits?author=jclancy93" title="Code">💻</a> <a href="https://github.com/ConsenSys/defi-score/commits?author=jclancy93" title="Documentation">📖</a> <a href="#talk-jclancy93" title="Talks">📢</a></td>
     <td align="center"><a href="https://twitter.com/JordanLyall"><img src="https://avatars0.githubusercontent.com/u/999289?v=4" width="100px;" alt="Jordan Lyall"/><br /><sub><b>Jordan Lyall</b></sub></a><br /><a href="#projectManagement-jordanlyall" title="Project Management">📆</a> <a href="https://github.com/ConsenSys/defi-score/commits?author=jordanlyall" title="Documentation">📖</a> <a href="#design-jordanlyall" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/flamingYawn"><img src="https://avatars3.githubusercontent.com/u/11626601?v=4" width="100px;" alt="tlip"/><br /><sub><b>tlip</b></sub></a><br /><a href="#design-flamingYawn" title="Design">🎨</a> <a href="#content-flamingYawn" title="Content">🖋</a></td>
   </tr>
 </table>
 

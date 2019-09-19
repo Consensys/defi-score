@@ -31,6 +31,16 @@
         "doc",
         "design"
       ]
+    },
+    {
+      "login": "flamingYawn",
+      "name": "tlip",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/11626601?v=4",
+      "profile": "https://github.com/flamingYawn",
+      "contributions": [
+        "design",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7
