@@ -41,6 +41,16 @@
         "design",
         "content"
       ]
+    },
+    {
+      "login": "ispytodd",
+      "name": "ispytodd",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/29828992?v=4",
+      "profile": "https://github.com/ispytodd",
+      "contributions": [
+        "content",
+        "blog"
+      ]
     }
   ],
   "contributorsPerLine": 7
