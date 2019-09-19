@@ -1,4 +1,16 @@
 {
+  "name": "defi-score",
+  "version": "0.1",
+  "description": "DeFi score is a framework for assessing risk in permissionless lending platforms",
+  "main": "README.md",
+  "repository": "git@github.com:ConsenSys/defi-score.git",
+  "author": "Jack Clancy <jack.clancy93@gmail.com>",
+  "license": "CC BY-SA 2.0",
+  "private": false,
+  "scripts": {
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
+  },
   "devDependencies": {
     "all-contributors-cli": "^6.9.1"
   }
