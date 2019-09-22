@@ -9,22 +9,10 @@ We encourage the Ethereum community to evolve the methodology, making it more ef
 * Join the discussion on [Telegram](https://t.me/defiscore).
 
 ## Table of Contents
-* [Scores](#scores)
 * [Example Implementation](#example-implementation)
 * [Components](#components)
 * [Further Reading](#further-reading)
 * [Contributors](#contributors)
-
-## Scores
-We've provided a few scores from early versions of the model and have included reasons why they score the way they do.
-
-| Pool           | DeFi Score (0-10) | Why?                                                        |
-|----------------|------------|-------------------------------------------------------------|
-| Compound - ETH | 8.5        | Audited, formally verified, highest liquidity in the market |
-| Compound - DAI | 5.5        | One of the least liquid compound markets historically       |
-| Compound - ZRX | 6.0        | Middling liquidity                                          |
-| dYdX - ETH     | 7.0        | Good liquidity, no formal verification                      |
-| dYdX - DAI     | 5.2        | Low liquidity                                               |
 
 ## Components
 The DeFi Score methodology can be organized into Smart Contract Risk, Financial Risk, and Other Considerations.
