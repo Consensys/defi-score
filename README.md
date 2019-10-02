@@ -36,7 +36,7 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
 ### II. Financial Risk
 
 * #### Collateral (25%)
-  Part of the promise of DeFi is that the functionality of smart contracts is completely on-chain, which means they are verifiable and transparent. Developers of DeFi platforms still have the ability to obscure their code in various ways, such as not verifying the bytecode and using off chain oracles processes. Security through obscurity offers weak security guarantees at best, and at worst results in delays in finding critical bugs.
+  While all of the current platforms use very conservative collateral factors, the highly volatile nature of crypto assets means that these high collateral factors may still be insufficient. Collateral Risk is assessed by looking at two pieces of data, both derivable from on-chain data. The first data point is the 30 day Exponential Moving Average (EMA) of the collateralization ratio. The second data point is an analysis of the collateral portfolio using the CVaR (Conditional Value at Risk) model, also known as the Expected Shortfall model.
 
 * #### Liquidity (10%)
   The currently scoped platforms all attempt to incentive liquidity by using dynamic interest rate models which produce varying rates depending on the level of liquidity in each asset pool. However, incentivized liquidity does not mean guaranteed liquidity. The absolute level of liquidity is used instead of the percentage utilization (outstandingDebt/totalAssets) because it has a side effect of also scoring larger pools higher.
