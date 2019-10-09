@@ -10,6 +10,7 @@ pip3 install jupyterlab
 Clone this repository.
 ```
 $ git clone https://github.com/ConsenSys/defi-score
+```
 
 ### Dependencies
 Install all dependencies either manually or by using, ideally using a virtual env
