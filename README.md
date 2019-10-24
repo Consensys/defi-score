@@ -1,4 +1,4 @@
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 <img src="assets/images/banner.png" alt="DeFi Score Banner">
 
 The DeFi Score is a framework for assessing risk in permissionless lending platforms. It's a single, consistently comparable value for measuring protocol risk, based on factors including smart contract risk, collateralization, and liquidity.
@@ -11,15 +11,18 @@ We encourage the Ethereum community to evolve the methodology, making it more ef
 
 ## Table of Contents
 * [Example Scores](#example-scores)
+* [Implementation](#implementation)
 * [Components](#components)
 * [Further Reading](#further-reading)
-* [Implementation](#implementation)
 * [Contributors](#contributors)
 
 ## Example Scores
 We've provided a few example scores with a breakdown of each component. Although the underlying methodology is complex, it should be simple for a user to understand.
 
 <img src="assets/images/defiscore-example.png" alt="DeFi Score Examples">
+
+## Implementation
+Want to run the numbers yourself? Check out the [implementation instructions](implementation).
 
 ## Components
 The DeFi Score methodology can be organized into Smart Contract Risk, Financial Risk, and Other Considerations.
@@ -57,35 +60,6 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
 ## Further Reading:
 [DeFi Score: Assessing Risk in Permissionless Lending Protocols](whitepaper.md)
 
-## Implementation
-Umami live-edge neutra, single-origin coffee chia occupy biodiesel. Wayfarers meggings salvia schlitz, fam offal jianbing.
-
-### Python
-Make sure you have Python 3 and Jupyter
-
-You can install jupyter once you have python3 by running
-```
-pip3 install jupyterlab
-```
-
-### Clone
-Clone this repository.
-```
-$ git clone https://github.com/ConsenSys/defi-score
-```
-
-### Dependencies
-Install all dependencies either manually or by using, ideally using a virtual env
-```
-$ pip3 install -r requirements.txt
-```
-
-### Running Code
-The code can then be run by using command
-```
-jupyter notebook
-```
-and choosing `implementation/implementation.ipynb` from the UI
 
 
 ## Contributors
