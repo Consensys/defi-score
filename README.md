@@ -5,31 +5,21 @@ The DeFi Score is a framework for assessing risk in permissionless lending platf
 
 We encourage the Ethereum community to evolve the methodology, making it more effective and easier to use.
 
+* See live scores at [defiscore.io](https://defiscore.io).
 * Read the detailed [whitepaper](whitepaper.md).
 * Join the discussion on [Telegram](https://t.me/defiscore).
 
 ## Table of Contents
-* [Scores](#scores)
-* [Example Implementation](#example-implementation)
+* [Example Scores](#example-scores)
 * [Components](#components)
 * [Further Reading](#further-reading)
+* [Implementation](#implementation)
 * [Contributors](#contributors)
 
-## Scores
-We've provided a few scores from early versions of the model and have included reasons why they score the way they do.
+## Example Scores
+We've provided a few example scores with a breakdown of each component. Although the underlying methodology is complex, it should be simple for a user to understand.
 
-| Pool           | DeFi Score (0-10) | Why?                                                        |
-|----------------|------------|-------------------------------------------------------------|
-| Compound - ETH | 8.5        | Audited, formally verified, highest liquidity in the market |
-| Compound - DAI | 5.5        | One of the least liquid compound markets historically       |
-| Compound - ZRX | 6.0        | Middling liquidity                                          |
-| dYdX - ETH     | 7.0        | Good liquidity, no formal verification                      |
-| dYdX - DAI     | 5.2        | Low liquidity                                               |
-
-## Example Implementation
-Although the underlying methodology is complex, it should be simple for a user to understand.
-
-<img src="assets/images/defiscore-implementation.png" alt="DeFi Score Example">
+<img src="assets/images/defiscore-example.png" alt="DeFi Score Examples">
 
 ## Components
 The DeFi Score methodology can be organized into Smart Contract Risk, Financial Risk, and Other Considerations.
@@ -66,6 +56,37 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
 
 ## Further Reading:
 [DeFi Score: Assessing Risk in Permissionless Lending Protocols](whitepaper.md)
+
+## Implementation
+Umami live-edge neutra, single-origin coffee chia occupy biodiesel. Wayfarers meggings salvia schlitz, fam offal jianbing.
+
+### Python
+Make sure you have Python 3 and Jupyter
+
+You can install jupyter once you have python3 by running
+```
+pip3 install jupyterlab
+```
+
+### Clone
+Clone this repository.
+```
+$ git clone https://github.com/ConsenSys/defi-score
+```
+
+### Dependencies
+Install all dependencies either manually or by using, ideally using a virtual env
+```
+$ pip3 install -r requirements.txt
+```
+
+### Running Code
+The code can then be run by using command
+```
+jupyter notebook
+```
+and choosing `implementation/implementation.ipynb` from the UI
+
 
 ## Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
