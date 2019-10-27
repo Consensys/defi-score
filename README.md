@@ -1,35 +1,28 @@
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 <img src="assets/images/banner.png" alt="DeFi Score Banner">
 
 The DeFi Score is a framework for assessing risk in permissionless lending platforms. It's a single, consistently comparable value for measuring protocol risk, based on factors including smart contract risk, collateralization, and liquidity.
 
 We encourage the Ethereum community to evolve the methodology, making it more effective and easier to use.
 
+* See live scores at [defiscore.io](https://defiscore.io).
 * Read the detailed [whitepaper](whitepaper.md).
 * Join the discussion on [Telegram](https://t.me/defiscore).
 
 ## Table of Contents
-* [Scores](#scores)
-* [Example Implementation](#example-implementation)
+* [Example Scores](#example-scores)
+* [Implementation](#implementation)
 * [Components](#components)
 * [Further Reading](#further-reading)
 * [Contributors](#contributors)
 
-## Scores
-We've provided a few scores from early versions of the model and have included reasons why they score the way they do.
+## Example Scores
+We've provided a few example scores with a breakdown of each component. Although the underlying methodology is complex, it should be simple for a user to understand.
 
-| Pool           | DeFi Score (0-10) | Why?                                                        |
-|----------------|------------|-------------------------------------------------------------|
-| Compound - ETH | 8.5        | Audited, formally verified, highest liquidity in the market |
-| Compound - DAI | 5.5        | One of the least liquid compound markets historically       |
-| Compound - ZRX | 6.0        | Middling liquidity                                          |
-| dYdX - ETH     | 7.0        | Good liquidity, no formal verification                      |
-| dYdX - DAI     | 5.2        | Low liquidity                                               |
+<img src="assets/images/defiscore-example.png" alt="DeFi Score Examples">
 
-## Example Implementation
-Although the underlying methodology is complex, it should be simple for a user to understand.
-
-<img src="assets/images/defiscore-implementation.png" alt="DeFi Score Example">
+## Implementation
+Want to run the numbers yourself? Check out the [implementation instructions](implementation).
 
 ## Components
 The DeFi Score methodology can be organized into Smart Contract Risk, Financial Risk, and Other Considerations.
@@ -66,6 +59,8 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
 
 ## Further Reading:
 [DeFi Score: Assessing Risk in Permissionless Lending Protocols](whitepaper.md)
+
+
 
 ## Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
