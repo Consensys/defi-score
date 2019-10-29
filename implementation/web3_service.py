@@ -1,12 +1,9 @@
 import os
 from web3 import Web3
 from dotenv import load_dotenv
-from pathlib import Path 
-env_path = Path('.') / '.env'
 load_dotenv(verbose=True)
 
 INFURA_API_KEY = os.getenv("INFURA_API_KEY")
-
 
 # Setup web3
 w3 = Web3(Web3.HTTPProvider(f'https://mainnet.infura.io/v3/{INFURA_API_KEY}'))
