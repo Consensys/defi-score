@@ -70,15 +70,7 @@ Without a widely accepted approach to on-chain reputation or identity, the only 
 
 The makeup of collateral assets that back these DeFi platforms also have a high level of variation, with some being made up of much more liquid<sup>5</sup>, stable assets than others. For example, a platform may be primarily backed by ETH. While ETH is still a very volatile asset, it is relatively stable and liquid compared to an asset like LINK<sup>6</sup>. These collateral makeup differences are an important factor when thinking about platform risk.
 
-Collateral Risk is assessed by looking at two pieces of data, both derivable from on-chain data. The first data point is the 30 day Exponential Moving Average (EMA) of the collateralization ratio, which is normalized using logarithmic min-max normalization across all of the available lending pools.  The second data point is an analysis of the collateral portfolio. Generally, EMA is calculated as follows:
-
-<img alt="EMA formula" style="border-width:0" src="assets/images/EMA.png" />
-
-
-Where:
-* The coefficient _α_ represents the degree of weighting decrease, a constant smoothing factor between 0 and 1. A smoothing factor of 2/31 has been chosen.
-* Y<sub>t</sub> is the value at a time period _t_. This is 30 for finding a 30d EMA
-* S<sub>t</sub> is the value of the EMA at any time period _t_.
+Collateral Risk is assessed by looking at two pieces of data, both derivable from on-chain data. The first data point is the utilization rate, which is normalized using min-max normalization across all of the available lending pools.  The second data point is an analysis of the collateral portfolio.
 
 There are many different models to assess the risk of a portfolio of assets. One of the most common models is the VaR (Value at Risk) model. There are multiple different variations of the VaR model. This model currently uses the CVaR (Conditional Value at Risk) model, also known as the Expected Shortfall model. The methodology uses CVaR over VaR because CVaR better captures the probability and drawdown of more extreme scenarios known as black swans. The above figure helps demonstrate this difference-- the CVAR (ES) model results in a larger potential drawdown. Due to the nascency and extreme volatility present in crypto assets, the methodology is more conservative. The model uses the 99% CVaR model with the following formula:
 
@@ -98,7 +90,7 @@ The complement of the percentage is taken as a higher CVAR is worse because it m
 #### Liquidity
 The currently scoped platforms all attempt to incentive liquidity by using dynamic interest rate models which produce varying rates depending on the level of liquidity in each asset pool. However, incentivized liquidity does not mean guaranteed liquidity. A user takes on risk that they will not be able to withdraw their lent out assets on demand because all the assets are currently lent out.
 
-Liquidity risk is assessed by a single data point that is derivable from on-chain data, which is the level of liquidity. This data point is the 30 day EMA of liquidity, normalized using logarithmic min-max normalization of the amount of liquidity in USD across all of the available lending pools. The absolute level of liquidity is used instead of the percentage utilization (outstandingDebt/totalAssets) because it has a side effect of also scoring larger pools higher.
+Liquidity risk is assessed by a single data point that is derivable from on-chain data, which is the level of liquidity. This data point is pool's liquidity level, normalized using logarithmic min-max normalization of the amount of liquidity in USD across all of the available lending pools.
 
 
 ### Other Considerations
@@ -122,8 +114,8 @@ DeFi as an industry is extremely nascent. Algorithmic money markets are even mor
 
 2. Financial Risk (35%)
 * Collateral Makeup CVaR (10%)
-* Collateralization Ratio 30d EMA (15%)
-* Liquidity 30d EMA (10%)
+* Utilization Ratio (15%)
+* Absolute Liquidity (10%)
 
 3. Other Considerations (15%)
 * Insurance/Regulatory Risk
