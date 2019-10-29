@@ -1,0 +1,7 @@
+env/
+node_modules/
+.env
+/implementation/.ipynb_checkpoints
+.DS_Store
+__pycache__/
+.vscode/

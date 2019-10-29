@@ -1,18 +1,28 @@
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 <img src="assets/images/banner.png" alt="DeFi Score Banner">
 
 The DeFi Score is a framework for assessing risk in permissionless lending platforms. It's a single, consistently comparable value for measuring protocol risk, based on factors including smart contract risk, collateralization, and liquidity.
 
 We encourage the Ethereum community to evolve the methodology, making it more effective and easier to use.
 
+* See live scores at [defiscore.io](https://defiscore.io).
 * Read the detailed [whitepaper](whitepaper.md).
 * Join the discussion on [Telegram](https://t.me/defiscore).
 
 ## Table of Contents
-* [Example Implementation](#example-implementation)
+* [Example Scores](#example-scores)
+* [Implementation](#implementation)
 * [Components](#components)
 * [Further Reading](#further-reading)
 * [Contributors](#contributors)
+
+## Example Scores
+We've provided a few example scores with a breakdown of each component. Although the underlying methodology is complex, it should be simple for a user to understand.
+
+<img src="assets/images/defiscore-example.png" alt="DeFi Score Examples">
+
+## Implementation
+Want to run the numbers yourself? Check out the [implementation instructions](implementation).
 
 ## Components
 The DeFi Score methodology can be organized into Smart Contract Risk, Financial Risk, and Other Considerations.
@@ -36,10 +46,10 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
 ### II. Financial Risk
 
 * #### Collateral (25%)
-  While all of the current platforms use very conservative collateral factors, the highly volatile nature of crypto assets means that these high collateral factors may still be insufficient. Collateral Risk is assessed by looking at two pieces of data, both derivable from on-chain data. The first data point is the 30 day Exponential Moving Average (EMA) of the collateralization ratio. The second data point is an analysis of the collateral portfolio using the CVaR (Conditional Value at Risk) model, also known as the Expected Shortfall model.
+  While all of the current platforms use very conservative collateral factors, the highly volatile nature of crypto assets means that these high collateral factors may still be insufficient. Collateral Risk is assessed by looking at two pieces of data, both derivable from on-chain data. The first data point is the utilization rate. The second data point is an analysis of the collateral portfolio using the CVaR (Conditional Value at Risk) model, also known as the Expected Shortfall model.
 
 * #### Liquidity (10%)
-  The currently scoped platforms all attempt to incentive liquidity by using dynamic interest rate models which produce varying rates depending on the level of liquidity in each asset pool. However, incentivized liquidity does not mean guaranteed liquidity. The absolute level of liquidity is used instead of the percentage utilization (outstandingDebt/totalAssets) because it has a side effect of also scoring larger pools higher.
+  The currently scoped platforms all attempt to incentive liquidity by using dynamic interest rate models which produce varying rates depending on the level of liquidity in each asset pool. However, incentivized liquidity does not mean guaranteed liquidity. THe absolute level of liquidity is used. 
 
 ### III. Other Considerations
 
@@ -49,6 +59,8 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
 
 ## Further Reading:
 [DeFi Score: Assessing Risk in Permissionless Lending Protocols](whitepaper.md)
+
+
 
 ## Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
