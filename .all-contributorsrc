@@ -51,6 +51,15 @@
         "content",
         "blog"
       ]
+    },
+    {
+      "login": "anthonyhuanggr",
+      "name": "Anthony H.",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/7041796?v=4",
+      "profile": "https://github.com/anthonyhuanggr",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7
