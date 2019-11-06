@@ -18,7 +18,7 @@ def findDecimals(token):
     decimals = 0
     if (token == 'wbtc'):
         decimals = 8
-    elif (token == 'usdc'):
+    elif (token == 'usdc' or token == 'usdt'):
         decimals = 6
     else:
         decimals = 18

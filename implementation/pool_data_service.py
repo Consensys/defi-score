@@ -17,11 +17,12 @@ def create_pool_data_object(token, total_supply, total_borrow, collateral=0):
   usd_price = fetch_current_usd_value(token)
   liquidity_base_token = total_supply - total_borrow
   utilization_rate = total_borrow / total_supply
+  collateral_base_token = collateral if collateral != 0 else liquidity_base_token
   pool_data = {
     'liquidity': liquidity_base_token * usd_price,
     'liquidityBaseToken': liquidity_base_token,
-    'collateral': (collateral or liquidity_base_token) * usd_price,
-    'collateralBaseToken': collateral or liquidity_base_token,
+    'collateral': collateral_base_token  * usd_price,
+    'collateralBaseToken': collateral_base_token,
     'totalSupply': total_supply * usd_price,
     'totalSupplyBaseToken': total_supply,
     'totalBorrow': total_borrow  * usd_price,
@@ -40,6 +41,8 @@ def get_all_available_pools():
       all_available_pools.append({ 'protocol': 'fulcrum', 'token': t['token'] })
     for t in constants.nuoContractInfo:
       all_available_pools.append({ 'protocol': 'nuo', 'token': t['token'] })
+    for t in constants.ddexContractInfo:
+      all_available_pools.append({ 'protocol': 'ddex', 'token': t['token'] })
     return all_available_pools
 
 def fetch_data_for_nuo_pool(token):
@@ -79,10 +82,25 @@ def fetch_data_for_fulcrum_pool(token):
   shift_by = web3_service.findDecimals(token)
   pool_info = next((m for m in constants.fulcrumContractInfo if m['token'] == token))
   itoken_contract = web3_service.initializeContract(pool_info['contractAddress'], constants.fulcrum_itoken_abi)
-  base_token_contract = web3_service.initializeContract(pool_info['baseTokenAddress'], abi=constants.erc20_abi_string)
   total_supply = itoken_contract.functions.totalAssetSupply().call() / 10 ** shift_by
   total_borrow = itoken_contract.functions.totalAssetBorrow().call() / 10 ** shift_by
   result = create_pool_data_object(token, total_supply, total_borrow)
+  return result
+
+def fetch_data_for_ddex_pool(token):
+  shift_by = web3_service.findDecimals(token)
+  pool_info = next((m for m in constants.ddexContractInfo if m['token'] == token))
+  ddex_contract_address = web3_service.w3.toChecksumAddress(constants.ddex_address)
+  ddex_contract = web3_service.initializeContract(constants.ddex_address, constants.ddex_abi)
+  checksummed_base_token_address = web3_service.w3.toChecksumAddress(pool_info['baseTokenAddress'])
+  base_token_contract = web3_service.initializeContract(pool_info['baseTokenAddress'], constants.erc20_abi_string)
+  if (token == 'eth'):
+    collateral = web3_service.w3.eth.getBalance(ddex_contract_address) / 10 ** shift_by
+  else:
+    collateral = base_token_contract.functions.balanceOf(ddex_contract_address).call() / 10 ** shift_by
+  total_supply = ddex_contract.functions.getTotalSupply(checksummed_base_token_address).call() / 10 ** shift_by
+  total_borrow = ddex_contract.functions.getTotalBorrow(checksummed_base_token_address).call() / 10 ** shift_by
+  result = create_pool_data_object(token, total_supply, total_borrow, collateral)
   return result
 
 # PUBLIC FUNCTIONS #
@@ -93,8 +111,10 @@ def fetch_data_for_pool(protocol, token, block='latest'):
     result = fetch_data_for_dydx_pool(token)
   elif protocol == 'fulcrum':
     result = fetch_data_for_fulcrum_pool(token)
-  else:
+  elif protocol == 'nuo':
     result = fetch_data_for_nuo_pool(token)
+  else:
+    result = fetch_data_for_ddex_pool(token)
   result['protocol'] = protocol
   result['token'] = token
   return result
