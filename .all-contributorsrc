@@ -60,6 +60,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "antonina-cherednichenko",
+      "name": "Antonina Norair",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1220854?v=4",
+      "profile": "https://github.com/antonina-cherednichenko",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7

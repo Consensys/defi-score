@@ -1,4 +1,4 @@
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 <img src="assets/images/banner.png" alt="DeFi Score Banner">
 
 The DeFi Score is a framework for assessing risk in permissionless lending platforms. It's a single, consistently comparable value for measuring protocol risk, based on factors including smart contract risk, collateralization, and liquidity.
@@ -72,6 +72,7 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
     <td align="center"><a href="https://github.com/flamingYawn"><img src="https://avatars3.githubusercontent.com/u/11626601?v=4" width="100px;" alt="tlip"/><br /><sub><b>tlip</b></sub></a><br /><a href="#design-flamingYawn" title="Design">🎨</a> <a href="#content-flamingYawn" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/ispytodd"><img src="https://avatars2.githubusercontent.com/u/29828992?v=4" width="100px;" alt="ispytodd"/><br /><sub><b>ispytodd</b></sub></a><br /><a href="#content-ispytodd" title="Content">🖋</a> <a href="#blog-ispytodd" title="Blogposts">📝</a></td>
     <td align="center"><a href="https://github.com/anthonyhuanggr"><img src="https://avatars0.githubusercontent.com/u/7041796?v=4" width="100px;" alt="Anthony H."/><br /><sub><b>Anthony H.</b></sub></a><br /><a href="#translation-anthonyhuanggr" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/antonina-cherednichenko"><img src="https://avatars0.githubusercontent.com/u/1220854?v=4" width="100px;" alt="Antonina Norair"/><br /><sub><b>Antonina Norair</b></sub></a><br /><a href="https://github.com/ConsenSys/defi-score/commits?author=antonina-cherednichenko" title="Documentation">📖</a></td>
   </tr>
 </table>
 
