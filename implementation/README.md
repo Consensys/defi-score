@@ -15,7 +15,7 @@ $ git clone https://github.com/ConsenSys/defi-score
 ### Dependencies
 Install all dependencies either manually or by using, ideally using a virtual env
 ```
-$ pip3 install -r requirements.txt
+$ pip3 install -r implementation/requirements.txt
 ```
 
 ### Running Code
