@@ -7,6 +7,8 @@ def fetch_current_usd_value(token):
         token_ticker = token[2:].upper()
     elif (token[0] == 'c' or token[0] ==  'w' or token[0] == 'i'):
         token_ticker = token[1:].upper()
+    elif token == 'sai':
+      token_ticker = 'DAI'
     else:
         token_ticker = token.upper()
     result = requests.get(f'https://min-api.cryptocompare.com/data/dayAvg?fsym={token_ticker}&tsym=USD')
