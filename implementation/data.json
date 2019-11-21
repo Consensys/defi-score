@@ -4,35 +4,35 @@
         "protocol": "dydx",
         "metrics": {
             "score": "7.7",
-            "liquidity": 0.9257365650913395,
-            "collateralized": 0.9306028574790767
+            "liquidity": 0.9158714567839243,
+            "collateralized": 0.9433841819247456
         }
     },
     {
         "asset": "dai",
         "protocol": "dydx",
         "metrics": {
-            "score": "6.2",
-            "liquidity": 0.7893274074139394,
-            "collateralized": 0.0
+            "score": "6.5",
+            "liquidity": 0.7404882683371835,
+            "collateralized": 0.2564106223982665
         }
     },
     {
         "asset": "usdc",
         "protocol": "dydx",
         "metrics": {
-            "score": "6.2",
-            "liquidity": 0.6898945590822175,
-            "collateralized": 0.08149811986801248
+            "score": "6.3",
+            "liquidity": 0.6642278806990964,
+            "collateralized": 0.17656464036669528
         }
     },
     {
         "asset": "eth",
         "protocol": "compound",
         "metrics": {
-            "score": "8.3",
+            "score": "8.4",
             "liquidity": 1.0,
-            "collateralized": 0.9687535858086783
+            "collateralized": 0.9768509096117495
         }
     },
     {
@@ -40,17 +40,17 @@
         "protocol": "compound",
         "metrics": {
             "score": "7.4",
-            "liquidity": 0.9212095348694229,
-            "collateralized": 0.4118846940905798
+            "liquidity": 0.864049396876715,
+            "collateralized": 0.45143192633375995
         }
     },
     {
         "asset": "usdc",
         "protocol": "compound",
         "metrics": {
-            "score": "7.2",
-            "liquidity": 0.8988300397456122,
-            "collateralized": 0.301102038739428
+            "score": "7.5",
+            "liquidity": 0.8906001721878803,
+            "collateralized": 0.4692442423004356
         }
     },
     {
@@ -58,17 +58,17 @@
         "protocol": "compound",
         "metrics": {
             "score": "8.0",
-            "liquidity": 0.7464579355578188,
-            "collateralized": 0.9193759610427022
+            "liquidity": 0.7050045832329983,
+            "collateralized": 0.9523289041864541
         }
     },
     {
         "asset": "bat",
         "protocol": "compound",
         "metrics": {
-            "score": "8.1",
-            "liquidity": 0.7279214640601767,
-            "collateralized": 0.9506659921989695
+            "score": "8.0",
+            "liquidity": 0.6566822280465529,
+            "collateralized": 0.9522272051812462
         }
     },
     {
@@ -76,8 +76,8 @@
         "protocol": "compound",
         "metrics": {
             "score": "8.2",
-            "liquidity": 0.8463189162766745,
-            "collateralized": 0.9805081307363683
+            "liquidity": 0.8720180910745676,
+            "collateralized": 0.990931932995319
         }
     },
     {
@@ -85,8 +85,8 @@
         "protocol": "compound",
         "metrics": {
             "score": "7.8",
-            "liquidity": 0.691896287983567,
-            "collateralized": 0.7780703563391542
+            "liquidity": 0.6383050630694229,
+            "collateralized": 0.8284414167380996
         }
     },
     {
@@ -94,8 +94,8 @@
         "protocol": "fulcrum",
         "metrics": {
             "score": "6.6",
-            "liquidity": 0.6454961634690429,
-            "collateralized": 0.35501882326841405
+            "liquidity": 0.5791247423878365,
+            "collateralized": 0.4220712680025972
         }
     },
     {
@@ -103,71 +103,71 @@
         "protocol": "fulcrum",
         "metrics": {
             "score": "7.4",
-            "liquidity": 0.650524361364709,
-            "collateralized": 0.8558726445305832
+            "liquidity": 0.5953881843066952,
+            "collateralized": 0.9159140112728652
         }
     },
     {
         "asset": "usdc",
         "protocol": "fulcrum",
         "metrics": {
-            "score": "6.1",
-            "liquidity": 0.5099625011840374,
-            "collateralized": 0.13156127787943883
+            "score": "5.8",
+            "liquidity": 0.3189133936483086,
+            "collateralized": 0.06573109348096928
         }
     },
     {
         "asset": "wbtc",
         "protocol": "fulcrum",
         "metrics": {
-            "score": "7.4",
-            "liquidity": 0.5131743493668285,
-            "collateralized": 0.9689228271770506
+            "score": "7.3",
+            "liquidity": 0.42504631191732406,
+            "collateralized": 0.9756313868113566
         }
     },
     {
         "asset": "rep",
         "protocol": "fulcrum",
         "metrics": {
-            "score": "6.9",
+            "score": "6.8",
             "liquidity": 0.0,
-            "collateralized": 1.0
+            "collateralized": 0.9004459867769076
         }
     },
     {
         "asset": "link",
         "protocol": "fulcrum",
         "metrics": {
-            "score": "7.3",
-            "liquidity": 0.38859800319300175,
-            "collateralized": 0.989173930775357
+            "score": "5.4",
+            "liquidity": 0.021097240325828118,
+            "collateralized": 0.0
         }
     },
     {
         "asset": "zrx",
         "protocol": "fulcrum",
         "metrics": {
-            "score": "6.7",
-            "liquidity": 0.1991487383182292,
-            "collateralized": 0.7267388538051441
+            "score": "6.9",
+            "liquidity": 0.18229434633749853,
+            "collateralized": 0.8647217342359752
         }
     },
     {
         "asset": "knc",
         "protocol": "fulcrum",
         "metrics": {
-            "score": "7.1",
-            "liquidity": 0.14957762645665368,
-            "collateralized": 0.9887871736824139
+            "score": "6.9",
+            "liquidity": 0.010956927264657967,
+            "collateralized": 0.9926735063824309
         }
     },
     {
-        "asset": "dai",
+        "asset": "sai",
         "protocol": "nuo",
         "metrics": {
-            "score": "3.8",
-            "liquidity": 0.6236578695849967,
-            "collateralized": 0.494861532647244
+            "score": "4.0",
+            "liquidity": 0.5692905029622201,
+            "collateralized": 0.6505530194753869
         }
     },
     {
@@ -175,26 +175,26 @@
         "protocol": "nuo",
         "metrics": {
             "score": "4.2",
-            "liquidity": 0.6111549223274083,
-            "collateralized": 0.762009828249151
+            "liquidity": 0.5461402162922305,
+            "collateralized": 0.8412081551459935
         }
     },
     {
         "asset": "usdc",
         "protocol": "nuo",
         "metrics": {
-            "score": "3.6",
-            "liquidity": 0.6788768896345172,
-            "collateralized": 0.3155340819386756
+            "score": "3.9",
+            "liquidity": 0.6489156000625388,
+            "collateralized": 0.548270610401145
         }
     },
     {
         "asset": "wbtc",
         "protocol": "nuo",
         "metrics": {
-            "score": "3.9",
-            "liquidity": 0.5454808825659059,
-            "collateralized": 0.603591084717207
+            "score": "4.2",
+            "liquidity": 0.4957558892379928,
+            "collateralized": 0.8303101072818774
         }
     },
     {
@@ -202,34 +202,34 @@
         "protocol": "nuo",
         "metrics": {
             "score": "4.3",
-            "liquidity": 0.41182086118649064,
-            "collateralized": 0.9863495214634599
+            "liquidity": 0.318150295544943,
+            "collateralized": 1.0
         }
     },
     {
         "asset": "link",
         "protocol": "nuo",
         "metrics": {
-            "score": "4.6",
-            "liquidity": 0.6249717925606832,
-            "collateralized": 0.9990317930995888
+            "score": "4.5",
+            "liquidity": 0.5700520723733535,
+            "collateralized": 0.9975097440695686
         }
     },
     {
         "asset": "zrx",
         "protocol": "nuo",
         "metrics": {
-            "score": "4.3",
-            "liquidity": 0.3580017925872474,
-            "collateralized": 0.984284867347004
+            "score": "4.1",
+            "liquidity": 0.2248633798237134,
+            "collateralized": 0.9676406022787262
         }
     },
     {
         "asset": "knc",
         "protocol": "nuo",
         "metrics": {
-            "score": "4.3",
-            "liquidity": 0.32573742174733167,
+            "score": "4.1",
+            "liquidity": 0.21144192067605563,
             "collateralized": 1.0
         }
     },
@@ -237,54 +237,54 @@
         "asset": "mkr",
         "protocol": "nuo",
         "metrics": {
-            "score": "4.5",
-            "liquidity": 0.5921581717649085,
-            "collateralized": 0.995721366973709
+            "score": "4.4",
+            "liquidity": 0.5156511134884106,
+            "collateralized": 0.9946952438867078
         }
     },
     {
         "asset": "tusd",
         "protocol": "nuo",
         "metrics": {
-            "score": "4.1",
-            "liquidity": 0.4488285231780008,
-            "collateralized": 0.8006851185840145
+            "score": "3.8",
+            "liquidity": 0.29337017327179343,
+            "collateralized": 0.6951622585985826
         }
     },
     {
         "asset": "bat",
         "protocol": "nuo",
         "metrics": {
-            "score": "4.4",
-            "liquidity": 0.49491033089225844,
-            "collateralized": 0.9764219238486548
+            "score": "4.3",
+            "liquidity": 0.4065374471104584,
+            "collateralized": 0.9746976057813028
         }
     },
     {
         "asset": "dai",
         "protocol": "ddex",
         "metrics": {
-            "score": "6.6",
-            "liquidity": 0.46740277237708794,
-            "collateralized": 0.4261987033524173
+            "score": "6.2",
+            "liquidity": 0.36620382100909854,
+            "collateralized": 0.3179971938121523
         }
     },
     {
         "asset": "eth",
         "protocol": "ddex",
         "metrics": {
-            "score": "6.4",
-            "liquidity": 0.47467196986146776,
-            "collateralized": 0.30685911430758817
+            "score": "7.3",
+            "liquidity": 0.5022361580815843,
+            "collateralized": 0.9660539470257805
         }
     },
     {
         "asset": "usdt",
         "protocol": "ddex",
         "metrics": {
-            "score": "7.4",
-            "liquidity": 0.5152348855468203,
-            "collateralized": 0.9604656649579844
+            "score": "5.9",
+            "liquidity": 0.32246445976040444,
+            "collateralized": 0.11573839944465891
         }
     }
 ]
