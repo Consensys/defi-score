@@ -1,4 +1,5 @@
-import web3_service, constants, json, requests
+from . import web3_service, constants
+import json, requests
 from pprint import pprint
 
 # PRIVATE FUNCTIONS #
