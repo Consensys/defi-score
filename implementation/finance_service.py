@@ -1,4 +1,5 @@
-import json, requests, time, datetime, math
+import json, requests, time, math
+from datetime import datetime, timedelta
 import pandas as pd
 import numpy as np
 from pandas_datareader import data as pdr
@@ -30,8 +31,8 @@ def getCryptoCompareReturns(token):
 # TODO - Fix Dates
 # Used to find historical USD values for all coins but stablecoins      
 def getReturns(tokens): 
-    first_date = '2017-10-06'
-    last_date = '2019-09-25'
+    last_date = datetime.today().strftime('%Y-%m-%d')
+    first_date = (datetime.today() - timedelta(days=520)).strftime('%Y-%m-%d')
     df_list = []
     for token in tokens:
         if (token['token'] == 'wbtc'):
