@@ -1,10 +1,5 @@
 ### Python
-Make sure you have Python 3 and Jupyter
-
-You can install jupyter once you have python3 by running 
-```
-pip3 install jupyterlab
-```
+Make sure you have Python 3+
 
 ### Clone
 Clone this repository.
@@ -15,12 +10,20 @@ $ git clone https://github.com/ConsenSys/defi-score
 ### Dependencies
 Install all dependencies either manually or by using, ideally using a virtual env
 ```
-$ pip3 install -r implementation/requirements.txt
+$ pip3 install -r requirements.txt
 ```
+
+### Environment Variables
+Create a new file `.env` based on `.env.example`
 
 ### Running Code
 The code can then be run by using command
 ```
-jupyter notebook
+python -m implementation
 ```
-and choosing `implementation/implementation.ipynb` from the UI
+
+or 
+
+```
+python3 -m implementation
+```
