@@ -7,11 +7,17 @@ Clone this repository.
 $ git clone https://github.com/ConsenSys/defi-score
 ```
 
-### Dependencies
-Install all dependencies, ideally using a virtual environment
-```
-$ pip3 install -r requirements.txt
-```
+### Set up Virtual Environment and Install Dependencies
+
+##### With `virtualenv`
+virtualenv env --python <PATH TO PYTHON EXECUTABLE>
+source env/bin/activate
+pip3 install -r implementation/requirements.txts
+
+##### With `venv`
+python -m venv <ENVIRONMENT_NAME>
+source env/bin/activate
+pip3 install -r implementation/requirements.txt
 
 ### Environment Variables
 Create a new file `.env` based on `.env.example`
@@ -20,10 +26,4 @@ Create a new file `.env` based on `.env.example`
 The code can then be run by using command
 ```
 python -m implementation
-```
-
-or 
-
-```
-python3 -m implementation
 ```
