@@ -223,5 +223,9 @@ ddexContractInfo = [
     {
       'token': 'dai',
       'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f'
+    },
+    {
+      'token': 'usdc',
+      'baseTokenAddress': '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
     }
 ]
