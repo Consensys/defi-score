@@ -73,7 +73,7 @@ compoundContractInfo = [
       'contract': '0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5'
     },
     {
-     'token': 'dai',
+     'token': 'sai',
      'contract': '0xf5dce57282a584d2746faf1593d3121fcac444dc'
     },
     {
@@ -95,6 +95,10 @@ compoundContractInfo = [
     {
      'token': 'wbtc',
      'contract': '0xc11b1268c1a384e55c48c2391d8d480264a3a7f4'
+    },
+    {
+      'token': 'dai',
+      'contract': '0x5d3a536e4d6dbd6114cc1ead35777bab948e3643'
     }
 ]
 
@@ -106,7 +110,7 @@ dydxContractInfo = {
 
 fulcrumContractInfo = [
     {
-        'token': 'dai',
+        'token': 'sai',
         'contractAddress': '0x14094949152eddbfcd073717200da82fed8dc960',
         'baseTokenAddress': '0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359'
     },
@@ -143,9 +147,13 @@ fulcrumContractInfo = [
     {
         'token': 'knc',
         'contractAddress': '0x1cc9567ea2eb740824a45f8026ccf8e46973234d',
-        'baseTokenAddress': '0xdd974d5c2e2928dea5f71b9825b8b646686bd200'
-        
+        'baseTokenAddress': '0xdd974d5c2e2928dea5f71b9825b8b646686bd200' 
     },
+    {
+        'token': 'dai',
+        'contractAddress': '0x493c57c4763932315a328269e1adad09653b9081',
+        'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f' 
+    }
 ]
 
 nuoContractInfo = [
@@ -201,7 +209,7 @@ nuoContractInfo = [
 
 ddexContractInfo = [
     {
-        'token': 'dai',
+        'token': 'sai',
         'baseTokenAddress': '0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359'
     },
     {
@@ -211,5 +219,13 @@ ddexContractInfo = [
     {
         'token': 'usdt',
         'baseTokenAddress': '0xdac17f958d2ee523a2206206994597c13d831ec7'
+    },
+    {
+      'token': 'dai',
+      'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f'
+    },
+    {
+      'token': 'usdc',
+      'baseTokenAddress': '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
     }
 ]

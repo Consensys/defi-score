@@ -18,9 +18,6 @@ def calculate_score(protocol, token, liquidity_value, collateral_value):
     score = weights['auditedCode'] * protocol_values['isCodeAudited'] + weights['allCodeOSS'] * protocol_values['isCodeOpenSource'] + weights['formalVer'] * protocol_values['isCodeFormallyVerified'] + weights['hasBugBounty'] * protocol_values['hasBugBounty'] + weights['cVaR'] * protocol_values['cvar'] + weights['poolCollateralization'] * collateral_value + weights['poolLiquidity'] * liquidity_value
     score = round(score, 2) * 10
     score = "{:.1f}".format(score)
-    # Extra formatting for sai -> dai migration
-    if token == 'SAI':
-        token = 'DAI'
     result = {
         'asset': token,
         'protocol': protocol,
@@ -35,6 +32,7 @@ def calculate_score(protocol, token, liquidity_value, collateral_value):
 def calculate_scores():
     # Get all pool data
     all_pool_data = pool_data_service.fetch_data_for_all_pools()
+    test = [p for p in all_pool_data if p['liquidity'] == 0]
     liquidity_array = [math.log(p['liquidity']) for p in all_pool_data]
     utilization_array = [p['utilizationRate'] for p in all_pool_data]
     results = []
