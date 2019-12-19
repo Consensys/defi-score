@@ -15,7 +15,7 @@ def calculate_score(protocol, token, liquidity_value, collateral_value):
         protocol_values = constants.ddex_values
     
     weights = constants.weights
-    score = weights['auditedCode'] * protocol_values['isCodeAudited'] + weights['allCodeOSS'] * protocol_values['isCodeOpenSource'] + weights['formalVer'] * protocol_values['isCodeFormallyVerified'] + weights['hasBugBounty'] * protocol_values['hasBugBounty'] + weights['cVaR'] * protocol_values['cvar'] + weights['poolCollateralization'] * collateral_value + weights['poolLiquidity'] * liquidity_value
+    score = weights['auditedCode'] * protocol_values['isCodeAudited'] + weights['allCodeOSS'] * protocol_values['isCodeOpenSource'] + weights['formalVer'] * protocol_values['isCodeFormallyVerified'] + weights['hasBugBounty'] * protocol_values['hasBugBounty'] + weights['cVaR'] * protocol_values['cvar'] + weights['poolCollateralization'] * collateral_value + weights['poolLiquidity'] * liquidity_value + weights['centralizationRisk'] * protocol_values['centralizationRisk']
     score = round(score, 2) * 10
     score = "{:.1f}".format(score)
     result = {
