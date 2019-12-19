@@ -30,6 +30,7 @@ protobuf==3.10.0
 pycryptodome==3.9.0
 pyrsistent==0.15.4
 python-dateutil==2.8.0
+python-dotenv==0.10.3
 pytz==2019.3
 requests==2.22.0
 rlp==1.1.0

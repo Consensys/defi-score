@@ -1,4 +1,5 @@
-import web3_service, constants, json, requests
+from . import web3_service, constants
+import json, requests
 from pprint import pprint
 
 # PRIVATE FUNCTIONS #
@@ -35,7 +36,7 @@ def create_pool_data_object(token, total_supply, total_borrow, collateral=0):
 
 def get_all_available_pools():
     all_available_pools = []
-    for t in constants.dydxContractInfo['markets']:
+    for t in constants.dydxContractInfo['activeMarkets']:
       all_available_pools.append({ 'protocol': 'dydx', 'token': t })
     for t in constants.compoundContractInfo:
       all_available_pools.append({ 'protocol': 'compound', 'token': t['token'] })
