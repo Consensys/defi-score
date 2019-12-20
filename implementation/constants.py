@@ -63,7 +63,7 @@ ddex_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 0,
  'hasBugBounty': 1,
- 'centralizationRisk': 0.625
+ 'centralizationRisk': 0.5
 }
 
 
