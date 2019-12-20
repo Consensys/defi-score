@@ -12,7 +12,7 @@ ddex_address = '0x241e82c79452f51fbfc89fac6d912e021db1a3b7'
 
 # methodology based weights
 weights = {
-    'auditedCode': 0.2,
+    'auditedCode': 0.25,
     'allCodeOSS': 0.1,
     'formalVer': 0.05,
     'hasBugBounty': 0.05,
