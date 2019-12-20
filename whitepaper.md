@@ -117,19 +117,21 @@ Another large element of centralization risk in these protocols is oracle centra
 
 ## Formula Breakdown
 
-1. Smart Contract Risk (50%)
+1. Smart Contract Risk (45%)
 * Audited code (25%)
 * All code’s byte source verified (15%)
 * Formal Verification (5%)
 * Bug Bounty Program (5%)
 
-2. Financial Risk (35%)
+2. Financial Risk (30%)
 * Collateral Makeup CVaR (10%)
-* Utilization Ratio (15%)
+* Utilization Ratio (10%)
 * Absolute Liquidity (10%)
 
-3. Other Considerations (15%)
-* Insurance/Regulatory Risk
+3. Centralization Risk (25%)
+* Protocol Administration (12.5%)
+* Oracles (12.5%)
+
 
 ## Limitations
 This is not a validated statistical model. There is not enough data to properly validate this model on a product wide basis. This is an opinion based estimation framework to estimate the risks associated with different DeFI platforms.
