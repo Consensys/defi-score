@@ -64,18 +64,22 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
 
 ## Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/jclancy93"><img src="https://avatars2.githubusercontent.com/u/7850202?v=4" width="100px;" alt="Jack Clancy"/><br /><sub><b>Jack Clancy</b></sub></a><br /><a href="https://github.com/ConsenSys/defi-score/commits?author=jclancy93" title="Code">💻</a> <a href="https://github.com/ConsenSys/defi-score/commits?author=jclancy93" title="Documentation">📖</a> <a href="#talk-jclancy93" title="Talks">📢</a></td>
-    <td align="center"><a href="https://twitter.com/JordanLyall"><img src="https://avatars0.githubusercontent.com/u/999289?v=4" width="100px;" alt="Jordan Lyall"/><br /><sub><b>Jordan Lyall</b></sub></a><br /><a href="#projectManagement-jordanlyall" title="Project Management">📆</a> <a href="https://github.com/ConsenSys/defi-score/commits?author=jordanlyall" title="Documentation">📖</a> <a href="#design-jordanlyall" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/flamingYawn"><img src="https://avatars3.githubusercontent.com/u/11626601?v=4" width="100px;" alt="tlip"/><br /><sub><b>tlip</b></sub></a><br /><a href="#design-flamingYawn" title="Design">🎨</a> <a href="#content-flamingYawn" title="Content">🖋</a></td>
-    <td align="center"><a href="https://github.com/ispytodd"><img src="https://avatars2.githubusercontent.com/u/29828992?v=4" width="100px;" alt="ispytodd"/><br /><sub><b>ispytodd</b></sub></a><br /><a href="#content-ispytodd" title="Content">🖋</a> <a href="#blog-ispytodd" title="Blogposts">📝</a></td>
-    <td align="center"><a href="https://github.com/anthonyhuanggr"><img src="https://avatars0.githubusercontent.com/u/7041796?v=4" width="100px;" alt="Anthony H."/><br /><sub><b>Anthony H.</b></sub></a><br /><a href="#translation-anthonyhuanggr" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/antonina-cherednichenko"><img src="https://avatars0.githubusercontent.com/u/1220854?v=4" width="100px;" alt="Antonina Norair"/><br /><sub><b>Antonina Norair</b></sub></a><br /><a href="https://github.com/ConsenSys/defi-score/commits?author=antonina-cherednichenko" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/jclancy93"><img src="https://avatars2.githubusercontent.com/u/7850202?v=4" width="100px;" alt=""/><br /><sub><b>Jack Clancy</b></sub></a><br /><a href="https://github.com/ConsenSys/defi-score/commits?author=jclancy93" title="Code">💻</a> <a href="https://github.com/ConsenSys/defi-score/commits?author=jclancy93" title="Documentation">📖</a> <a href="#talk-jclancy93" title="Talks">📢</a></td>
+    <td align="center"><a href="https://twitter.com/JordanLyall"><img src="https://avatars0.githubusercontent.com/u/999289?v=4" width="100px;" alt=""/><br /><sub><b>Jordan Lyall</b></sub></a><br /><a href="#projectManagement-jordanlyall" title="Project Management">📆</a> <a href="https://github.com/ConsenSys/defi-score/commits?author=jordanlyall" title="Documentation">📖</a> <a href="#design-jordanlyall" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/flamingYawn"><img src="https://avatars3.githubusercontent.com/u/11626601?v=4" width="100px;" alt=""/><br /><sub><b>tlip</b></sub></a><br /><a href="#design-flamingYawn" title="Design">🎨</a> <a href="#content-flamingYawn" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/ispytodd"><img src="https://avatars2.githubusercontent.com/u/29828992?v=4" width="100px;" alt=""/><br /><sub><b>ispytodd</b></sub></a><br /><a href="#content-ispytodd" title="Content">🖋</a> <a href="#blog-ispytodd" title="Blogposts">📝</a></td>
+    <td align="center"><a href="https://github.com/anthonyhuanggr"><img src="https://avatars0.githubusercontent.com/u/7041796?v=4" width="100px;" alt=""/><br /><sub><b>Anthony H.</b></sub></a><br /><a href="#translation-anthonyhuanggr" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/antonina-cherednichenko"><img src="https://avatars0.githubusercontent.com/u/1220854?v=4" width="100px;" alt=""/><br /><sub><b>Antonina Norair</b></sub></a><br /><a href="https://github.com/ConsenSys/defi-score/commits?author=antonina-cherednichenko" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/TomAFrench"><img src="https://avatars3.githubusercontent.com/u/15848336?v=4" width="100px;" alt=""/><br /><sub><b>Tom French</b></sub></a><br /><a href="https://github.com/ConsenSys/defi-score/commits?author=TomAFrench" title="Documentation">📖</a></td>
   </tr>
 </table>
 
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## Community
