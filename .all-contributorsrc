@@ -78,6 +78,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "karbica",
+      "name": "Kevin Arbi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/8563742?v=4",
+      "profile": "https://github.com/karbica",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
