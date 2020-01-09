@@ -76,6 +76,9 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
     <td align="center"><a href="https://github.com/antonina-cherednichenko"><img src="https://avatars0.githubusercontent.com/u/1220854?v=4" width="100px;" alt=""/><br /><sub><b>Antonina Norair</b></sub></a><br /><a href="https://github.com/ConsenSys/defi-score/commits?author=antonina-cherednichenko" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/TomAFrench"><img src="https://avatars3.githubusercontent.com/u/15848336?v=4" width="100px;" alt=""/><br /><sub><b>Tom French</b></sub></a><br /><a href="https://github.com/ConsenSys/defi-score/commits?author=TomAFrench" title="Documentation">📖</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/karbica"><img src="https://avatars3.githubusercontent.com/u/8563742?v=4" width="100px;" alt=""/><br /><sub><b>Kevin Arbi</b></sub></a><br /><a href="https://github.com/ConsenSys/defi-score/commits?author=karbica" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
