@@ -9,9 +9,18 @@
   "private": false,
   "scripts": {
     "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate"
+    "contributors:generate": "all-contributors generate",
+    "release": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "devDependencies": {
-    "all-contributors-cli": "^6.9.1"
+    "@commitlint/cli": "^8.3.4",
+    "@commitlint/config-conventional": "^8.3.4",
+    "all-contributors-cli": "^6.9.1",
+    "standard-version": "^7.0.1"
   }
 }
