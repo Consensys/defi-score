@@ -115,7 +115,6 @@ def fetch_data_for_aave_pool(token):
   checksummed_base_token_address = web3_service.w3.toChecksumAddress(pool_info['baseTokenAddress'])
   aave_contract = web3_service.initializeContract(aave_contract_address, constants.aave_abi)
   market_info = aave_contract.functions.getReserveData(checksummed_base_token_address).call()
-  pprint(market_info)
   total_supply = market_info[0] / 10 ** shift_by
   total_borrow_stable = market_info[2] / 10 ** shift_by
   total_borrows_variable = market_info[3] / 10 ** shift_by

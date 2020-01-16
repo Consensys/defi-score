@@ -15,13 +15,13 @@ aave_address = '0x398eC7346DcD622eDc5ae82352F02bE94C62d119'
 # methodology based weights
 weights = {
     'auditedCode': 0.25,
-    'allCodeOSS': 0.15,
+    'allCodeOSS': 0.1,
     'formalVer': 0.05,
     'hasBugBounty': 0.05,
     'cVaR': 0.1,
-    'poolCollateralization': 0.15,
+    'poolCollateralization': 0.1,
     'poolLiquidity': 0.1,
-    'insuranceRisk': 0.15
+    'centralizationRisk': 0.25
 }
 
 # Setting values for off-chain data about protocols
@@ -31,7 +31,7 @@ compound_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 1,
  'hasBugBounty': 1,
- 'insuranceRisk': 0
+ 'centralizationRisk': 0.375
 }
 
 dydx_values = {
@@ -39,7 +39,7 @@ dydx_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 0,
  'hasBugBounty': 1,
- 'insuranceRisk': 0
+ 'centralizationRisk': 0.625
 }
 
 fulcrum_values = {
@@ -47,7 +47,7 @@ fulcrum_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 0,
  'hasBugBounty': 1,
- 'insuranceRisk': 0
+ 'centralizationRisk': 0.625
 }
 
 nuo_values = {
@@ -56,7 +56,7 @@ nuo_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 0,
  'hasBugBounty': 0,
- 'insuranceRisk': 0
+ 'centralizationRisk': 0.375
 }
 
 ddex_values = {
@@ -64,7 +64,7 @@ ddex_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 0,
  'hasBugBounty': 1,
- 'insuranceRisk': 0
+ 'centralizationRisk': 0.5
 }
 
 aave_values = {
@@ -72,7 +72,7 @@ aave_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 0,
  'hasBugBounty': 1,
- 'insuranceRisk': 0
+ 'centralizationRisk': 0.5
 }
 
 
@@ -268,32 +268,34 @@ aaveContractInfo = [
       'token': 'dai',
       'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f',
     },
-    # {
-    #   'token': 'bat',
-    #   'baseTokenAddress': '0x0d8775f648430679a709e98d2b0cb6250d2887ef',
-    # },
-    # {
-    #   'token': 'lend',
-    #   'baseTokenAddress': '0x80fB784B7eD66730e8b1DBd9820aFD29931aab03',
-    # },
-    # {
-    #   'token': 'mkr',
-    #   'baseTokenAddress': '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
-    # },
-    # {
-    #   'token': 'tusd',
-    #   'baseTokenAddress': '0x0000000000085d4780B73119b644AE5ecd22b376',
-    # },
-    # {
-    #   'token': 'usdt',
-    #   'baseTokenAddress': '0xdac17f958d2ee523a2206206994597c13d831ec7',
-    # },
-    # {
-    #   'token': 'snx',
-    #   'baseTokenAddress': '0xc011a72400e58ecd99ee497cf89e3775d4bd732f',
-    # },
-    # {
-    #   'token': 'susd',
-    #   'baseTokenAddress': '0x57ab1e02fee23774580c119740129eac7081e9d3',
-    # },
+    {
+      'token': 'bat',
+      'baseTokenAddress': '0x0d8775f648430679a709e98d2b0cb6250d2887ef',
+    },
+    {
+      'token': 'lend',
+      'baseTokenAddress': '0x80fB784B7eD66730e8b1DBd9820aFD29931aab03',
+    },
+    {
+      'token': 'mkr',
+      'baseTokenAddress': '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
+    },
+    {
+      'token': 'tusd',
+      'baseTokenAddress': '0x0000000000085d4780B73119b644AE5ecd22b376',
+    },
+    {
+      'token': 'usdt',
+      'baseTokenAddress': '0xdac17f958d2ee523a2206206994597c13d831ec7',
+    },
+    {
+      'token': 'snx',
+      'contractAddress': '0x398eC7346DcD622eDc5ae82352F02bE94C62d119',
+      'baseTokenAddress': '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f',
+    },
+    {
+      'token': 'susd',
+      'contractAddress': '0x398eC7346DcD622eDc5ae82352F02bE94C62d119',
+      'baseTokenAddress': '0x57ab1ec28d129707052df4df418d58a2d46d5f51',
+    },
 ]
