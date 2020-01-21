@@ -13,13 +13,13 @@ ddex_address = '0x241e82c79452f51fbfc89fac6d912e021db1a3b7'
 # methodology based weights
 weights = {
     'auditedCode': 0.25,
-    'allCodeOSS': 0.15,
+    'allCodeOSS': 0.1,
     'formalVer': 0.05,
     'hasBugBounty': 0.05,
     'cVaR': 0.1,
-    'poolCollateralization': 0.15,
+    'poolCollateralization': 0.1,
     'poolLiquidity': 0.1,
-    'insuranceRisk': 0.15
+    'centralizationRisk': 0.25
 }
 
 # Setting values for off-chain data about protocols
@@ -29,7 +29,7 @@ compound_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 1,
  'hasBugBounty': 1,
- 'insuranceRisk': 0
+ 'centralizationRisk': 0.375
 }
 
 dydx_values = {
@@ -37,7 +37,7 @@ dydx_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 0,
  'hasBugBounty': 1,
- 'insuranceRisk': 0
+ 'centralizationRisk': 0.625
 }
 
 fulcrum_values = {
@@ -45,7 +45,7 @@ fulcrum_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 0,
  'hasBugBounty': 1,
- 'insuranceRisk': 0
+ 'centralizationRisk': 0.625
 }
 
 nuo_values = {
@@ -54,7 +54,7 @@ nuo_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 0,
  'hasBugBounty': 0,
- 'insuranceRisk': 0
+ 'centralizationRisk': 0.375
 }
 
 ddex_values = {
@@ -63,7 +63,7 @@ ddex_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 0,
  'hasBugBounty': 1,
- 'insuranceRisk': 0
+ 'centralizationRisk': 0.5
 }
 
 

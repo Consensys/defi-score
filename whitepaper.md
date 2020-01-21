@@ -92,33 +92,46 @@ The currently scoped platforms all attempt to incentive liquidity by using dynam
 
 Liquidity risk is assessed by a single data point that is derivable from on-chain data, which is the level of liquidity. This data point is pool's liquidity level, normalized using logarithmic min-max normalization of the amount of liquidity in USD across all of the available lending pools.
 
+### Centralization & Intermediary Risk
+Centralization risk is an important risk to consider when lending money with DeFi protocols. Different DeFi protocols have different levels of centralization risk, and the DeFi Score should attempt to highlight them.
 
-### Other Considerations
+#### Protocol Administration
+One of the biggest contributors to centralization risk in DeFi protocols is the use of admin keys. Admin keys allow protocol developers to change different parameters of their smart contract systems like oracles, interest rates and potentially more. Protocol developer’s’ ability to alter these contract parameters allows them to cause financial loss to users. Measures like timelocks and multi-signature wallets help mitigate the risk of financial loss due to centralized elements. Mult-signature wallets help mitigate this risk by distributing control to a larger number of developers, meaning that the loss or compromise of a single private key cannot compromise the entire system.  Timelocks help mitigate risk by allowing protocol users to exit their positions before a change can take place. 
 
-#### The Need for Insurance
-In most developed banking systems, money market accounts have some form of deposit insurance. In the US, this deposit insurance is FDIC insurance, which insures a single bank deposit account up to $250,000. There is no equivalent deposit insurance in the DeFi ecosystem yet. While there are some promising innovations in the DeFi insurance space (Nexus Mutual), none are widespread or mature enough yet.
+| Score        | Description           | 
+| ------------ |-------------| 
+| 1    | Admin keys without timelock  | 
+| 2    | Admin keys with timelock      |
+| 3 | Admin keys with timelock and multisig  |
+| 4 | No admin keys - autonomous/decentralized governance | 
 
-Some platforms are contributing a portion of the interest accrued on their platform to an insurance reserve, in case of a liquidity squeeze or black swan event. However, these insurance pools are nowhere near large enough to cover a large insolvency event on one of these platforms.
+#### Oracles
+Another large element of centralization risk in these protocols is oracle centralization. There are many different flavors of oracle systems being used to power these protocols. Some protocols use a fully self-operated oracle system while others use externally operated oracles like Uniswap and Kyber. Samczun’s writeup on oracles and their ability to cause financial loss provides good background information. The oracle centralization score is not focused on whether these price feeds are manipulatable or not (they all are), but whether a single entity can manipulate them with ease. In the self-operated model, it only takes the oracle owner to manipulate its data. Decentralized oracles can’t be manipulated in the same way, but may not always represent the fair market value for an asset, which is why developers building on top of decentralized oracles opt to use price volatility bounds to defend against these types of attacks.
 
-
-#### Regulatory Risk
-DeFi as an industry is extremely nascent. Algorithmic money markets are even more so. None of these platforms’ development teams are actually decentralized yet and none have been approved by the United States or other nations’ banking/finance regulatory bodies yet. This means that the user of these platforms also takes on some level of regulatory risk when interacting with them.
+| Score        | Description           | 
+| ------------ |-------------| 
+| 1    | Only centralized self-operated oracles used  | 
+| 2    | Mix of centralized and decentralized oracles used      |
+| 3 | Only decentralized oracles used  |
+| 4 | No oracles needed | 
 
 ## Formula Breakdown
 
-1. Smart Contract Risk (50%)
+1. Smart Contract Risk (45%)
 * Audited code (25%)
 * All code’s byte source verified (15%)
 * Formal Verification (5%)
 * Bug Bounty Program (5%)
 
-2. Financial Risk (35%)
+2. Financial Risk (30%)
 * Collateral Makeup CVaR (10%)
-* Utilization Ratio (15%)
+* Utilization Ratio (10%)
 * Absolute Liquidity (10%)
 
-3. Other Considerations (15%)
-* Insurance/Regulatory Risk
+3. Centralization Risk (25%)
+* Protocol Administration (12.5%)
+* Oracles (12.5%)
+
 
 ## Limitations
 This is not a validated statistical model. There is not enough data to properly validate this model on a product wide basis. This is an opinion based estimation framework to estimate the risks associated with different DeFI platforms.
