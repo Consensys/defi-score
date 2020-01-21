@@ -1,6 +1,6 @@
 {
   "name": "defi-score",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "DeFi score is a framework for assessing risk in permissionless lending platforms",
   "main": "README.md",
   "repository": "git@github.com:ConsenSys/defi-score.git",
