@@ -62,6 +62,10 @@ One of the biggest contributors to centralization risk in DeFi protocols is the 
 Another large element of centralization risk in these protocols is oracle centralization. There are many different flavors of oracle systems being used to power these protocols. Some protocols use a fully self-operated oracle system while others use externally operated oracles like Uniswap and Kyber. [Samczsun’s writeup](https://samczsun.com/taking-undercollateralized-loans-for-fun-and-for-profit/) on oracles and their ability to cause financial loss provides good background information. The oracle centralization score is not focused on whether these price feeds are manipulatable or not (they all are), but whether a single entity can manipulate them with ease. In the self-operated model, it only takes the oracle owner to manipulate its data. Decentralized oracles can’t be manipulated in the same way, but may not always represent the fair market value for an asset, which is why developers building on top of decentralized oracles opt to use price volatility bounds to defend against these types of attacks.
 
 
+### Disclaimer
+
+The current DeFi Score algorithm uses min max normalization for certain metrics (Utilization Index and Liquidity Index). Anyone can fork the code and add support for new pools. However, if you add a pool that introduces a new lower or upper bound of utilization or liquidity, this will have a material effect on the scores for all other pools. The DeFi score team regularly adds support for new pools once they meet our requirements which you can read more about [here](https://github.com/ConsenSys/defi-score/blob/master/pool-support-threshold.md)
+
 ## Further Reading:
 [DeFi Score: Assessing Risk in Permissionless Lending Protocols](whitepaper.md)
 
