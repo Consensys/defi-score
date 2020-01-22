@@ -69,37 +69,37 @@ ddex_values = {
 
 compoundContractInfo = [
     {
-      'token': 'eth',
-      'contract': '0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5'
+        'token': 'eth',
+        'contract': '0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5'
     },
     {
-     'token': 'sai',
-     'contract': '0xf5dce57282a584d2746faf1593d3121fcac444dc'
+        'token': 'sai',
+        'contract': '0xf5dce57282a584d2746faf1593d3121fcac444dc'
     },
     {
-     'token': 'usdc',
-     'contract': '0x39aa39c021dfbae8fac545936693ac917d5e7563'
+        'token': 'usdc',
+        'contract': '0x39aa39c021dfbae8fac545936693ac917d5e7563'
     },
     {
-     'token': 'zrx',
-     'contract': '0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407'
+        'token': 'zrx',
+        'contract': '0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407'
     },
     {
-     'token': 'bat',
-     'contract': '0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e'
+        'token': 'bat',
+        'contract': '0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e'
     },
     {
-     'token': 'rep',
-     'contract': '0x158079ee67fce2f58472a96584a73c7ab9ac95c1'
+        'token': 'rep',
+        'contract': '0x158079ee67fce2f58472a96584a73c7ab9ac95c1'
     },
     {
-     'token': 'wbtc',
-     'contract': '0xc11b1268c1a384e55c48c2391d8d480264a3a7f4'
+        'token': 'wbtc',
+        'contract': '0xc11b1268c1a384e55c48c2391d8d480264a3a7f4'
     },
     {
-      'token': 'dai',
-      'contract': '0x5d3a536e4d6dbd6114cc1ead35777bab948e3643'
-    }
+        'token': 'dai',
+        'contract': '0x5d3a536e4d6dbd6114cc1ead35777bab948e3643',
+    },
 ]
 
 dydxContractInfo = {
@@ -110,9 +110,14 @@ dydxContractInfo = {
 
 fulcrumContractInfo = [
     {
+        'token': 'dai',
+        'contractAddress': '0x493c57c4763932315a328269e1adad09653b9081',
+        'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f' 
+    },
+    {
         'token': 'sai',
         'contractAddress': '0x14094949152eddbfcd073717200da82fed8dc960',
-        'baseTokenAddress': '0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359'
+        'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f'
     },
     {
         'token': 'eth',
@@ -130,11 +135,6 @@ fulcrumContractInfo = [
         'baseTokenAddress': '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599'
     },
     {
-        'token': 'rep',
-        'contractAddress': '0xbd56e9477fc6997609cf45f84795efbdac642ff1',
-        'baseTokenAddress': '0x1985365e9f78359a9B6AD760e32412f4a445E862'
-    },
-    {
         'token': 'link',
         'contractAddress': '0x1d496da96caf6b518b133736beca85d5c4f9cbc5',
         'baseTokenAddress': '0x514910771af9ca656af840dff83e8264ecf986ca'
@@ -147,12 +147,12 @@ fulcrumContractInfo = [
     {
         'token': 'knc',
         'contractAddress': '0x1cc9567ea2eb740824a45f8026ccf8e46973234d',
-        'baseTokenAddress': '0xdd974d5c2e2928dea5f71b9825b8b646686bd200' 
+        'baseTokenAddress': '0xdd974d5c2e2928dea5f71b9825b8b646686bd200'
     },
     {
-        'token': 'dai',
-        'contractAddress': '0x493c57c4763932315a328269e1adad09653b9081',
-        'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f' 
+        'token': 'susd',
+        'contractAddress': '0x49f4592E641820e928F9919Ef4aBd92a719B4b49',
+        'baseTokenAddress': '0x57ab1ec28d129707052df4df418d58a2d46d5f51',
     }
 ]
 
@@ -182,50 +182,62 @@ nuoContractInfo = [
         'baseTokenAddress': '0x514910771af9ca656af840dff83e8264ecf986ca'
     },
     {
-        'token': 'zrx',
-        'baseTokenAddress': '0xe41d2489571d322189246dafa5ebde1f4699f498'
-    },
-    {
         'token': 'knc',
         'baseTokenAddress': '0xdd974d5c2e2928dea5f71b9825b8b646686bd200'
-
     },
     {
         'token': 'mkr',
         'baseTokenAddress': '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2'
-
     },
     {
         'token': 'tusd',
         'baseTokenAddress': '0x8dd5fbce2f6a956c3022ba3663759011dd51e73e'
-
     },
     {
         'token': 'bat',
         'baseTokenAddress': '0x0d8775f648430679a709e98d2b0cb6250d2887ef'
-
+    },
+    {
+        'token': 'snx',
+        'baseTokenAddress': '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f'
+    },
+    {
+        'token': 'dai',
+        'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f'
     }
 ]
 
 ddexContractInfo = [
     {
-        'token': 'sai',
-        'baseTokenAddress': '0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359'
+        'token': 'eth',
+        'baseTokenAddress': '0x000000000000000000000000000000000000000E'
     },
     {
-        'token': 'eth',
-        'baseTokenAddress': '0x000000000000000000000000000000000000000e'
+        'token': 'sai',
+        'baseTokenAddress': '0x89d24A6b4CcB1B6fAA2625fE562bDD9a23260359'
+    },
+    {
+        'token': 'wbtc',
+        'baseTokenAddress': '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599'
+    },
+    {
+        'token': 'dai',
+        'baseTokenAddress': '0x6B175474E89094C44Da98b954EedeAC495271d0F'
     },
     {
         'token': 'usdt',
         'baseTokenAddress': '0xdac17f958d2ee523a2206206994597c13d831ec7'
     },
     {
-      'token': 'dai',
-      'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f'
+        'token': 'dai',
+        'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f'
     },
     {
-      'token': 'usdc',
-      'baseTokenAddress': '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+        'token': 'usdc',
+        'baseTokenAddress': '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
+    },
+    {
+        'token': 'usdc',
+        'baseTokenAddress': '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48'
     }
 ]
