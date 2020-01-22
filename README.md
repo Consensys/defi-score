@@ -64,7 +64,7 @@ Another large element of centralization risk in these protocols is oracle centra
 
 ### Disclaimer
 
-The current DeFi Score algorithm uses min max normalization for certain metrics (Utilization Index and Liquidity Index). Anyone can fork the code and add support for new pools. However, if you add a pool that introduces a new lower or upper bound of utilization or liquidity, this will have a material effect on the scores for all other pools. The DeFi score team regularly adds support for new pools once they meet our requirements which you can read more about [here](https://github.com/ConsenSys/defi-score/blob/master/pool-support-threshold.md)
+The current DeFi Score algorithm uses min max normalization for certain metrics (Utilization Index and Liquidity Index). Anyone can fork the code and add support for new pools. However, if you add a pool that introduces a new lower or upper bound of utilization or liquidity, this will have a material effect on the scores for all other pools. The DeFi score team regularly adds support for new pools once they meet our requirements which you can read more about [here](https://github.com/ConsenSys/defi-score/blob/master/pool-support-threshold.md).
 
 ## Further Reading:
 [DeFi Score: Assessing Risk in Permissionless Lending Protocols](whitepaper.md)
