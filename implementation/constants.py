@@ -119,11 +119,6 @@ dydxContractInfo = {
 
 fulcrumContractInfo = [
     {
-      'token': 'dai',
-      'contractAddress': '0x493c57c4763932315a328269e1adad09653b9081',
-      'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f' 
-    },
-    {
       'token': 'sai',
       'contractAddress': '0x14094949152eddbfcd073717200da82fed8dc960',
       'baseTokenAddress': '0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359'
@@ -157,6 +152,11 @@ fulcrumContractInfo = [
       'token': 'knc',
       'contractAddress': '0x1cc9567ea2eb740824a45f8026ccf8e46973234d',
       'baseTokenAddress': '0xdd974d5c2e2928dea5f71b9825b8b646686bd200'
+    },
+    {
+      'token': 'dai',
+      'contractAddress': '0x493c57c4763932315a328269e1adad09653b9081',
+      'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f' 
     },
     {
       'token': 'susd',
@@ -236,10 +236,6 @@ ddexContractInfo = [
     {
       'token': 'usdt',
       'baseTokenAddress': '0xdac17f958d2ee523a2206206994597c13d831ec7'
-    },
-    {
-      'token': 'dai',
-      'baseTokenAddress': '0x6b175474e89094c44da98b954eedeac495271d0f'
     },
     {
       'token': 'usdc',
