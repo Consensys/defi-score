@@ -46,6 +46,8 @@ def get_all_available_pools():
       all_available_pools.append({ 'protocol': 'nuo', 'token': t['token'] })
     for t in constants.ddexContractInfo:
       all_available_pools.append({ 'protocol': 'ddex', 'token': t['token'] })
+    for t in constants.aaveContractInfo:
+      all_available_pools.append({ 'protocol': 'aave', 'token': t['token'] })
     return all_available_pools
 
 def fetch_data_for_nuo_pool(token):
@@ -106,6 +108,20 @@ def fetch_data_for_ddex_pool(token):
   result = create_pool_data_object(token, total_supply, total_borrow, collateral)
   return result
 
+def fetch_data_for_aave_pool(token):
+  shift_by = web3_service.findDecimals(token)
+  pool_info = next((m for m in constants.aaveContractInfo if m['token'] == token))
+  aave_contract_address = web3_service.w3.toChecksumAddress(constants.aave_address)
+  checksummed_base_token_address = web3_service.w3.toChecksumAddress(pool_info['baseTokenAddress'])
+  aave_contract = web3_service.initializeContract(aave_contract_address, constants.aave_abi)
+  market_info = aave_contract.functions.getReserveData(checksummed_base_token_address).call()
+  total_supply = market_info[0] / 10 ** shift_by
+  total_borrow_stable = market_info[2] / 10 ** shift_by
+  total_borrows_variable = market_info[3] / 10 ** shift_by
+  total_borrow = total_borrow_stable + total_borrows_variable
+  result = create_pool_data_object(token, total_supply, total_borrow)
+  return result
+
 # PUBLIC FUNCTIONS #
 def fetch_data_for_pool(protocol, token, block='latest'):
   if protocol == 'compound':
@@ -116,6 +132,8 @@ def fetch_data_for_pool(protocol, token, block='latest'):
     result = fetch_data_for_fulcrum_pool(token)
   elif protocol == 'nuo':
     result = fetch_data_for_nuo_pool(token)
+  elif protocol == 'aave':
+    result = fetch_data_for_aave_pool(token)
   else:
     result = fetch_data_for_ddex_pool(token)
   result['protocol'] = protocol
