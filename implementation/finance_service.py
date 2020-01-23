@@ -39,7 +39,7 @@ def getReturns(tokens):
             token = token['token'][1:].upper()
         else:
             token = token['token'].upper()
-        if (token in ['DAI', 'USDC', 'MKR', 'TUSD', 'USDT', 'SAI', 'SUSD', 'SNX']):
+        if (token == 'DAI' or token == 'USDC' or token == 'MKR' or token == 'TUSD' or token == 'USDT' or token == 'SAI'):
             if token == 'SAI':
                 token = 'DAI'
             ticker_returns = getCryptoCompareReturns(token)
