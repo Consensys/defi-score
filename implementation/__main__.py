@@ -83,6 +83,15 @@ def main():
   constants.ddex_values['cvar'] = 1 + ddex_portfolio_cvar
 
   scores = calculate_scores()
+
+  scores.append({
+    'asset': 'dai',
+    'protocol': 'mcd',
+    'metrics': {
+      'score': 9.7
+    }
+  })
+
   with open('./implementation/data.json', 'w', encoding='utf-8') as f:
       json.dump(scores, f, ensure_ascii=False, indent=4)
   

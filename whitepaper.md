@@ -5,20 +5,30 @@ This article introduces a model for assessing risk levels in various permissionl
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Overview of Permissionless Lending Protocols](#overview-of-permissionless-lending-protocols)
-  - [Smart Contract Risk](#smart-contract-risk)
-  - [Financial Risk](#financial-risk)
-  - [Other Considerations](#other-considerations)
-- [Formula Breakdown](#formula-breakdown)
-- [Limitations](#limitations)
-- [Future Improvements](#future-improvements)
-- [References](#references)
-- [Contributors](#contributors)
-  - [Key Contributors](#key-contributors)
-  - [Additional Contributors](#additional-contributors)
-- [Community](#community)
-- [License](#license)
+- [DeFi Score: Assessing Risk in Permissionless Lending Protocols](#defi-score-assessing-risk-in-permissionless-lending-protocols)
+  - [tl;dr](#tldr)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Overview of Permissionless Lending Protocols](#overview-of-permissionless-lending-protocols)
+    - [Smart Contract Risk](#smart-contract-risk)
+      - [Code Security](#code-security)
+      - [Code Openness](#code-openness)
+    - [Financial Risk](#financial-risk)
+      - [Collateral](#collateral)
+      - [Liquidity](#liquidity)
+    - [Centralization & Intermediary Risk](#centralization--intermediary-risk)
+      - [Protocol Administration](#protocol-administration)
+      - [Oracles](#oracles)
+  - [Formula Breakdown](#formula-breakdown)
+  - [Limitations](#limitations)
+    - [DAI Savings Rate](#dai-savings-rate)
+  - [Future Improvements](#future-improvements)
+  - [References](#references)
+  - [Contributors](#contributors)
+    - [Key Contributors:](#key-contributors)
+    - [Additional Contributors:](#additional-contributors)
+  - [Community](#community)
+  - [License](#license)
 
 ## Introduction
 A major impetus for Satoshi Nakamoto in creating Bitcoin was the 2008 financial crisis. The genesis block of Bitcoin contained a reference to the bank bailouts of that time<sup>1</sup>. Some felt that the crisis precipitating these bailouts was caused in part by the legacy financial world’s misunderstanding and mispricing of credit risk throughout the financial system. Risk management is one of the most critical pieces of modern financial infrastructure and results in a more robust and safe financial system for all.
@@ -140,8 +150,23 @@ This rating methodology is based on the opinions of the investment quality on a 
 
 This methodology attempts to compare different DeFi money market platforms on a relative basis, not on an absolute basis. This is a comparison between other DeFi money market platforms and legacy financial investments, like deposit accounts. The DeFi space is extremely nascent, and without a wealth of historical data, it is more difficult to make forward-looking statements.
 
-__This model does not consider many other risks that are relevant to these products, such as oracle risk, centralization risks and liquidation policies.__
+__This model does not consider many other risks that are relevant to these products, such as liquidation policies.__
 
+
+### DAI Savings Rate
+Although the model was designed specifically for lending pools, the ability to earn money through the DAI Savings Rate is such a significant earning opportunity that we felt very strongly that it should be scored and included in our reference python implementation. Despite the fact that we have plans to design a model that better fits this (somewhat unique) opportunity, there was enough interest to warrant adding a preliminary score based off a few of DSR's characteristics. Here is the breakdown of its score:
+
+| Category   | Score   |
+| ---------- | ------- |
+| Smart Contract Risk | 45/45 |
+| Financial Risk | 30/30 |
+| Centralization Risk | 21.875/25 |
+| **Total** | **96.875/100** |  
+
+Some notes:
+* Because its smart contract has been audited, had its bytecode verified, has been formally verified, and has a bug bounty program, it gets a perfect score for "Smart Contract Risk."
+* What the DeFi Score calls "Financial Risk" does not apply to the earning opportunity presented by DSR. Because of this, DSR gets a perfect score for this category.
+* Because the protocol has a multisig admin key with a timelock and does not require oracles, it gets 7/8 of 25% for "Centralization Risk."
 
 ## Future Improvements
 There is much work still to do on this model. This is early stage research. This model needs more fine-tuning and validation. There is also a need to include other relevant risks in this model, like centralization risks, oracle risks and liquidation policy risks. Some of these are hard to quantify, which is why they were not included in the initial iteration.
