@@ -1,7 +1,7 @@
 # DeFi Score: Assessing Risk in Permissionless Lending Protocols
 
 ## tl;dr
-This article introduces a model for assessing risk levels in various permissionless lending protocols. To account for the variety of risks present in these platforms, we use a multi-factor model that looks at smart contract, collateral, and liquidity risks. The model uses a mix of public off-chain and on-chain data to best estimate the relative levels of risk across multiple different permissionless, Ethereum-based lending products.
+This article introduces a model for assessing risk levels in various permissionless lending protocols. To account for the variety of risks present in these platforms, we use a multi-factor model that looks at smart contract, financial and centralization risks. The model uses a mix of public off-chain and on-chain data to best estimate the relative levels of risk across multiple different permissionless, Ethereum-based lending products.
 
 ## Table of Contents
 
@@ -119,7 +119,7 @@ Another large element of centralization risk in these protocols is oracle centra
 
 1. Smart Contract Risk (45%)
 * Audited code (25%)
-* All code’s byte source verified (15%)
+* All code’s byte source verified (10%)
 * Formal Verification (5%)
 * Bug Bounty Program (5%)
 
@@ -144,7 +144,7 @@ __This model does not consider many other risks that are relevant to these produ
 
 
 ## Future Improvements
-There is much work still to do on this model. This is early stage research. This model needs more fine-tuning and validation. There is also a need to include other relevant risks in this model, like centralization risks, oracle risks and liquidation policy risks. Some of these are hard to quantify, which is why they were not included in the initial iteration.
+There is much work still to do on this model. This is early stage research. This model needs more fine-tuning and validation. There is also a need to include other relevant risks in this model, like liquidation policy risks. Some of these are hard to quantify, which is why they were not included in the initial iteration.
 
 Eventually, it might also make sense to break some of these scoring sub components down into their own, more robust scoring algorithms. This way the subcomponents can be composed to score different types of blockchain finance products. Future coverage could include additional DeFi earning products like Set, synthetic asset products like Maker and UMA, market making products like Uniswap and the various CeFI counterparts of these products.
 
