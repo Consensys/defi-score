@@ -45,7 +45,7 @@ fulcrum_values = {
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 0,
  'hasBugBounty': 1,
- 'centralizationRisk': 0.625
+ 'centralizationRisk': 0.5
 }
 
 nuo_values = {
@@ -58,7 +58,6 @@ nuo_values = {
 }
 
 ddex_values = {
- # This is marked as 0 because even though Nuo received a Quantstamp audit, they never released the audit report
  'isCodeAudited': 1,
  'isCodeOpenSource': 1,
  'isCodeFormallyVerified': 0,
