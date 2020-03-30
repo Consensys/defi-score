@@ -56,19 +56,16 @@ While no smart contract can be guaranteed as safe and free of bugs, a thorough c
 
 Our model assesses code security by looking at three pieces of off-chain but public data:
 
-1. Audited Code: The first is whether the code been audited by a reputable security team (Consensys Diligence, Trail of Bits, others??).
-2. Formal Verification:The second data point is whether the code has been formally verified by a reputable security team.
-3. Bounty Program:The third data point is whether the development team offers a public bug bounty program.
-
+  1. **Time on Mainnet - (25%):** Normalized time since the protocol first launched on mainnet
+  2. **No Critical Vulnerabilities:** No vulnerabilities have been exploited
+  3. **Four Engineer Weeks** 4 or more engineer weeks have been dedicated to auditing the protocol
+  4. **Public Audit:** Has the audit report been made public
+  5. **Recent Audit:** Has there been an audit in the last 12 months **OR** have no code changes been made
+  6. **Bounty Program:** Does the development team offers a public bug bounty program?
 
 <sup>3</sup>Securities and Exchange Commission, Release No. 81207, https://www.sec.gov/litigation/investreport/34‐81207.pdf (“SEC DAO Report”) at 1.
 
 <sup>4</sup>Id. at 9. The DAO hack funds were ultimately recovered through an extraordinary “fork” of the Ethereum blockchain, id., but such forks cannot be expected to recover from future hacks.
-
-#### Code Openness
-Part of the promise of DeFi is that the functionality of smart contracts is completely on-chain, which means the code is verifiable and transparent. Developers of DeFi platforms still have the ability to obscure their code in various ways, such as not verifying the bytecode and using off chain oracles processes. Security through obscurity offers weak security guarantees at best, and at worst results in delays in finding critical bugs. While bytecode decompilation is possible, it is a difficult and time-consuming process and makes it hard to follow the mantra of “don’t trust, verify”.
-
-Code openness is assessed by looking at a single data point of off-chain but public data, whether the byte code has been verified.
 
 ### Financial Risk
 DeFi contains many of the same risks as legacy finance. While most lending platforms use over-collateralization to reduce credit risk, over-collateralization does not completely remove credit risk. Crypto assets are notoriously volatile and these platforms have no method to recover from system insolvency caused by volatile collateral assets.
@@ -128,10 +125,13 @@ Another large element of centralization risk in these protocols is oracle centra
 ## Formula Breakdown
 
 1. Smart Contract Risk (45%)
-* Audited code (25%)
-* All code’s byte source verified (10%)
-* Formal Verification (5%)
-* Bug Bounty Program (5%)
+* Time on Mainnet (11.25%)
+* No Critical Vulnerabilities (9%)
+* Engineering Weeks (4.5%)
+* Recent Audit or no code changes (6.75%)
+* Public Audit (6.75%)
+* Bug Bounty (6.75%)
+
 
 2. Financial Risk (30%)
 * Collateral Makeup CVaR (10%)
