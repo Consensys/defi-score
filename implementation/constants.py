@@ -34,7 +34,7 @@ compound_values = {
  'operatingWithoutExploitSince': 1537926480,
  'publicAudit': 1,
  'hasBugBounty': 1,
- 'centralizationRisk': 0.375
+ 'centralizationRisk': 0.625
 }
 
 dydx_values = {

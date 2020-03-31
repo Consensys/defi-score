@@ -17,7 +17,7 @@ def calculate_score(protocol, token, liquidity_value, collateral_value):
         protocol_values = constants.ddex_values
     
     weights = constants.weights
-    score = weights['engineeringWeeks'] * protocol_values['fourEngineeringWeeks'] + weights['noCriticalVulns'] * protocol_values['noCriticalVulns'] + weights['recentOrNoCodeChanges'] * protocol_values['recentAuditOrNoCodeChanges'] + weights['timeIndex'] * protocol_values['timeIndex'] + weights['hasBugBounty'] * protocol_values['hasBugBounty'] + weights['cVaR'] * protocol_values['cvar'] + weights['poolCollateralization'] * collateral_value + weights['poolLiquidity'] * liquidity_value + weights['centralizationRisk'] * protocol_values['centralizationRisk']
+    score = weights['engineeringWeeks'] * protocol_values['fourEngineeringWeeks'] + weights['publicAudit'] * protocol_values['publicAudit'] + weights['noCriticalVulns'] * protocol_values['noCriticalVulns'] + weights['recentOrNoCodeChanges'] * protocol_values['recentAuditOrNoCodeChanges'] + weights['timeIndex'] * protocol_values['timeIndex'] + weights['hasBugBounty'] * protocol_values['hasBugBounty'] + weights['cVaR'] * protocol_values['cvar'] + weights['poolCollateralization'] * collateral_value + weights['poolLiquidity'] * liquidity_value + weights['centralizationRisk'] * protocol_values['centralizationRisk']
     score = round(score, 2) * 10
     score = "{:.1f}".format(score)
     result = {
@@ -26,7 +26,8 @@ def calculate_score(protocol, token, liquidity_value, collateral_value):
         'metrics': {
             'score': score,
             'liquidityIndex': str(liquidity_value),
-            'collateralIndex': str(collateral_value)
+            'collateralIndex': str(collateral_value),
+            'centralizationIndex': str(protocol_values['centralizationRisk'])
         }
     }
     return result
