@@ -35,20 +35,20 @@ def create_pool_data_object(token, total_supply, total_borrow, collateral=0):
   return pool_data
 
 def get_all_available_pools():
-    all_available_pools = []
-    for t in constants.dydxContractInfo['activeMarkets']:
-      all_available_pools.append({ 'protocol': 'dydx', 'token': t })
-    for t in constants.compoundContractInfo:
-      all_available_pools.append({ 'protocol': 'compound', 'token': t['token'] })
-    for t in constants.fulcrumContractInfo:
-      all_available_pools.append({ 'protocol': 'fulcrum', 'token': t['token'] })
-    for t in constants.nuoContractInfo:
-      all_available_pools.append({ 'protocol': 'nuo', 'token': t['token'] })
-    for t in constants.ddexContractInfo:
-      all_available_pools.append({ 'protocol': 'ddex', 'token': t['token'] })
-    for t in constants.aaveContractInfo:
-      all_available_pools.append({ 'protocol': 'aave', 'token': t['token'] })
-    return all_available_pools
+  all_available_pools = []
+  for t in constants.dydxContractInfo['activeMarkets']:
+    all_available_pools.append({ 'protocol': 'dydx', 'token': t })
+  for t in constants.compoundContractInfo:
+    all_available_pools.append({ 'protocol': 'compound', 'token': t['token'] })
+  for t in constants.fulcrumContractInfo:
+    all_available_pools.append({ 'protocol': 'fulcrum', 'token': t['token'] })
+  for t in constants.nuoContractInfo:
+    all_available_pools.append({ 'protocol': 'nuo', 'token': t['token'] })
+  for t in constants.ddexContractInfo:
+    all_available_pools.append({ 'protocol': 'ddex', 'token': t['token'] })
+  for t in constants.aaveContractInfo:
+    all_available_pools.append({ 'protocol': 'aave', 'token': t['token'] })
+  return all_available_pools
 
 def fetch_data_for_nuo_pool(token):
   # Have to fetch the data from the API for now because fetching outstandingDebt from Nuo is challenging
@@ -72,15 +72,15 @@ def fetch_data_for_compound_pool(token):
   return result
 
 def fetch_data_for_dydx_pool(token):
-    shift_by = 6 if token == 'usdc'  else 18
-    pool_info = constants.dydxContractInfo['markets'].index(token)
-    initializedContract = web3_service.initializeContract(constants.dydxContractInfo['contractAddress'], abi=constants.dydx_abi_string)
-    pool_data = initializedContract.functions.getMarketWithInfo(pool_info).call()
-    # Grab + calculate data from dydx market info structure
-    total_supply = pool_data[0][1][1] / 10 ** shift_by
-    total_borrow = pool_data[0][1][0] / 10 ** shift_by
-    result = create_pool_data_object(token, total_supply, total_borrow)
-    return result
+  shift_by = 6 if token == 'usdc'  else 18
+  pool_info = constants.dydxContractInfo['markets'].index(token)
+  initializedContract = web3_service.initializeContract(constants.dydxContractInfo['contractAddress'], abi=constants.dydx_abi_string)
+  pool_data = initializedContract.functions.getMarketWithInfo(pool_info).call()
+  # Grab + calculate data from dydx market info structure
+  total_supply = pool_data[0][1][1] / 10 ** shift_by
+  total_borrow = pool_data[0][1][0] / 10 ** shift_by
+  result = create_pool_data_object(token, total_supply, total_borrow)
+  return result
 
 
 def fetch_data_for_fulcrum_pool(token):

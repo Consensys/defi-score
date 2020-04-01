@@ -27,7 +27,8 @@ def calculate_score(protocol, token, liquidity_value, collateral_value):
             'score': score,
             'liquidityIndex': str(liquidity_value),
             'collateralIndex': str(collateral_value),
-            'centralizationIndex': str(protocol_values['centralizationRisk'])
+            'centralizationIndex': str(protocol_values['centralizationRisk']),
+            'timIndex': str(protocol_values['timeIndex'])
         }
     }
     return result
@@ -55,7 +56,8 @@ def main():
         constants.nuo_values['operatingWithoutExploitSince'],
         constants.fulcrum_values['operatingWithoutExploitSince'],
         constants.ddex_values['operatingWithoutExploitSince'],
-        constants.dydx_values['operatingWithoutExploitSince']
+        constants.dydx_values['operatingWithoutExploitSince'],
+        constants.maker_values['operatingWithoutExploitSince']
     ]
 
     # Pulling and calculating Compound data
@@ -112,7 +114,9 @@ def main():
     'asset': 'dai',
     'protocol': 'mcd',
     'metrics': {
-        'score': 9.7
+        'score': '9.7',
+        'timeIndex': '1',
+        'centralizationIndex': '0.875'
     }
     })
 

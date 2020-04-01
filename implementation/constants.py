@@ -58,7 +58,6 @@ fulcrum_values = {
 }
 
 nuo_values = {
- # This is marked as 0 because even though Nuo received a Quantstamp audit, they never released the audit report
  'fourEngineeringWeeks': 0,
  'noCriticalVulns': 1,
  'recentAuditOrNoCodeChanges': 0,
@@ -86,6 +85,16 @@ aave_values = {
  'publicAudit': 1,
  'hasBugBounty': 1,
  'centralizationRisk': 0.5
+}
+
+maker_values = {
+  'fourEngineeringWeeks': 1,
+  'noCriticalVulns': 1,
+  'recentAuditOrNoCodeChanges': 1,
+  'operatingWithoutExploitSince': 1513566600,
+  'publicAudit': 1,
+  'hasBugBounty': 1,
+  'centralizationRisk': 0.875
 }
 
 
