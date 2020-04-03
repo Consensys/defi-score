@@ -12,12 +12,14 @@ nuo_kernel_address = '0xaf38668f4719ecf9452dc0300be3f6c83cbf3721'
 ddex_address = '0x241e82c79452f51fbfc89fac6d912e021db1a3b7'
 aave_address = '0x398eC7346DcD622eDc5ae82352F02bE94C62d119'
 
-# methodology based weights
+# Methodology based weights
 weights = {
-    'auditedCode': 0.25,
-    'allCodeOSS': 0.1,
-    'formalVer': 0.05,
-    'hasBugBounty': 0.05,
+    'engineeringWeeks': 0.045,
+    'noCriticalVulns': 0.09,
+    'recentOrNoCodeChanges': 0.0675,
+    'timeIndex': 0.1125,
+    'publicAudit': 0.0675,
+    'hasBugBounty': 0.0675,
     'cVaR': 0.1,
     'poolCollateralization': 0.1,
     'poolLiquidity': 0.1,
@@ -25,54 +27,74 @@ weights = {
 }
 
 # Setting values for off-chain data about protocols
-# If you find a mistake, please open an issue!
 compound_values = {
- 'isCodeAudited': 1,
- 'isCodeOpenSource': 1,
- 'isCodeFormallyVerified': 1,
+ 'fourEngineeringWeeks': 1,
+ 'noCriticalVulns': 1,
+ 'recentAuditOrNoCodeChanges': 1,
+ 'operatingWithoutExploitSince': 1537926480,
+ 'publicAudit': 1,
  'hasBugBounty': 1,
- 'centralizationRisk': 0.375
+ 'centralizationRisk': 0.625
 }
 
 dydx_values = {
- 'isCodeAudited': 1,
- 'isCodeOpenSource': 1,
- 'isCodeFormallyVerified': 0,
+ 'fourEngineeringWeeks': 1,
+ 'noCriticalVulns': 1,
+ 'recentAuditOrNoCodeChanges': 1,
+ 'operatingWithoutExploitSince': 1538001120,
+ 'publicAudit': 1,
  'hasBugBounty': 1,
  'centralizationRisk': 0.625
 }
 
 fulcrum_values = {
- 'isCodeAudited': 1,
- 'isCodeOpenSource': 1,
- 'isCodeFormallyVerified': 0,
+ 'fourEngineeringWeeks': 0,
+ 'noCriticalVulns': 0,
+ 'recentAuditOrNoCodeChanges': 0,
+ 'operatingWithoutExploitSince': 1581995638,
+ 'publicAudit': 1,
  'hasBugBounty': 1,
  'centralizationRisk': 0.5
 }
 
 nuo_values = {
- # This is marked as 0 because even though Nuo received a Quantstamp audit, they never released the audit report
- 'isCodeAudited': 0,
- 'isCodeOpenSource': 1,
- 'isCodeFormallyVerified': 0,
+ 'fourEngineeringWeeks': 0,
+ 'noCriticalVulns': 1,
+ 'recentAuditOrNoCodeChanges': 0,
+ 'operatingWithoutExploitSince': 1548172317,
+ 'publicAudit': 0,
  'hasBugBounty': 0,
  'centralizationRisk': 0.375
 }
 
 ddex_values = {
- 'isCodeAudited': 1,
- 'isCodeOpenSource': 1,
- 'isCodeFormallyVerified': 0,
+ 'fourEngineeringWeeks': 1,
+ 'noCriticalVulns': 1,
+ 'recentAuditOrNoCodeChanges': 0,
+ 'operatingWithoutExploitSince': 1566470505,
+ 'publicAudit': 1,
  'hasBugBounty': 1,
  'centralizationRisk': 0.5
 }
 
 aave_values = {
- 'isCodeAudited': 1,
- 'isCodeOpenSource': 1,
- 'isCodeFormallyVerified': 0,
+ 'fourEngineeringWeeks': 1,
+ 'noCriticalVulns': 1,
+ 'recentAuditOrNoCodeChanges': 1,
+ 'operatingWithoutExploitSince': 1578500586,
+ 'publicAudit': 1,
  'hasBugBounty': 1,
  'centralizationRisk': 0.5
+}
+
+maker_values = {
+  'fourEngineeringWeeks': 1,
+  'noCriticalVulns': 1,
+  'recentAuditOrNoCodeChanges': 1,
+  'operatingWithoutExploitSince': 1513566600,
+  'publicAudit': 1,
+  'hasBugBounty': 1,
+  'centralizationRisk': 0.875
 }
 
 

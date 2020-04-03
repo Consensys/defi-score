@@ -1,5 +1,5 @@
 import json, requests, time, math
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import pandas as pd
 import numpy as np
 from pandas_datareader import data as pdr
@@ -28,7 +28,6 @@ def getCryptoCompareReturns(token):
     returns = df.copy().pct_change().fillna(value=0, axis=0).rename(columns={'close': f'daily_returns_{token}'})
     return returns
     
-# TODO - Fix Dates
 # Used to find historical USD values for all coins but stablecoins      
 def getReturns(tokens): 
     last_date = datetime.today().strftime('%Y-%m-%d')
@@ -39,7 +38,7 @@ def getReturns(tokens):
             token = token['token'][1:].upper()
         else:
             token = token['token'].upper()
-        if (token in ['DAI', 'USDC', 'MKR', 'TUSD', 'USDT', 'SAI', 'SUSD', 'SNX']):
+        if (token in ['DAI', 'USDC', 'MKR', 'TUSD', 'USDT', 'SAI', 'SUSD', 'SNX', 'LEND']):
             if token == 'SAI':
                 token = 'DAI'
             ticker_returns = getCryptoCompareReturns(token)
@@ -90,3 +89,8 @@ def normalize_data(val, list):
     max_value = max(list)
     min_value = min(list)
     return (val - min_value) / (max_value - min_value)
+
+def normalize_time_data(val, list):
+    max_value = int(datetime.now(tz=timezone.utc).timestamp())
+    min_value = min(list)
+    return 1 - ((val - min_value) / (max_value - min_value))

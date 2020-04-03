@@ -31,17 +31,17 @@ The DeFi Score methodology can be organized into Smart Contract Risk, Financial 
 
 ### I. Smart Contract Risk
 
-* #### Smart Contract Security (35%)
+* #### Smart Contract Security (45%)
   Errors, bugs and unexpected outcomes in smart contracts can cause real financial harm. These risks can be minimized by proactive code audits and formal verification from reputable security firms.
 
   Our model assesses code security by looking at three pieces of off-chain but public data:
 
-  1. **Audited Code:** Has the code been audited by a reputable security team?
-  2. **Formal Verification:** Has the code been formally verified by a reputable security team?
-  3. **Bounty Program:** Does the development team offers a public bug bounty program?
-
-* #### Smart Contract Openness (10%)
-  Part of the promise of DeFi is that the functionality of smart contracts is completely on-chain, which means they are verifiable and transparent. Developers of DeFi platforms still have the ability to obscure their code in various ways, such as not verifying the bytecode and using off chain oracles processes. Security through obscurity offers weak security guarantees at best, and at worst results in delays in finding critical bugs.
+  1. **Time on Mainnet** Normalized time since the protocol first launched on mainnet
+  2. **No Critical Vulnerabilities:** No vulnerabilities have been exploited
+  3. **Four Engineer Weeks** 4 or more engineer weeks have been dedicated to auditing the protocol
+  4. **Public Audit:** Has the audit report been made public
+  5. **Recent Audit:** Has there been an audit in the last 12 months **OR** have no code changes been made
+  6. **Bounty Program:** Does the development team offers a public bug bounty program?
 
 ### II. Financial Risk
 
