@@ -12,7 +12,7 @@ $ git clone https://github.com/ConsenSys/defi-score
 ##### With `virtualenv`
 virtualenv env --python <PATH TO PYTHON EXECUTABLE>
 source env/bin/activate
-pip3 install -r implementation/requirements.txts
+pip3 install -r implementation/requirements.txt
 
 ##### With `venv`
 python -m venv <ENVIRONMENT_NAME>
