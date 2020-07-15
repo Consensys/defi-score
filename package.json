@@ -21,7 +21,7 @@
     "@commitlint/cli": "^8.3.4",
     "@commitlint/config-conventional": "^8.3.4",
     "all-contributors-cli": "^6.9.1",
-    "standard-version": "^7.0.1"
+    "standard-version": "^8.0.1"
   },
   "resolutions": {
     "standard-version/**/minimist": "1.2.2"
